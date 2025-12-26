@@ -1,0 +1,74 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 520
+station_code = "MAT"
+reel_number = 52
+
+[tape.epoch]
+start_year = 1977
+start_month = 10
+time_zone_offset = 0  # UTC despite JST written on reel
+
+[tape.clock.generation_2]
+signal_polarity_inverted = true
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "MAT/520_MAT052_NG_20181026.tpc5"
+
+[[hint]]
+# Discard span 1 - ~ 23 mins, cannot confirm timing
+position = 465184469 # 351 13:00  351:13:00 +  0.00
+discard = true
+
+[[hint]]
+# Discard span 2 - ~ 22 mins, ok ts, cannot confirm timing
+position = 465417819 # 351 13:49  351:13:49 -  0.00 
+discard = true
+
+[[hint]]
+# Discard span 3 - ~ 18 hrs, cannot confirm timing, maybe revisit
+position = 465682014 # 351 14:30  351:14:30 -  0.00
+discard = true
+
+[[hint]]
+# Shift span 4
+position = 473148864 # 352 08:40  352:08:40 -  0.00
+minute = 2
+
+[[hint]]
+# Discard span 5 - ~ 18 hrs, cannot confirm timing, maybe revisit
+position = 479800485 # 353 00:15  353:00:15 +  0.00
+discard = true
+
+[[hint]]
+# Discard span 6 - ~ 6 hrs, cannot confirm timing, maybe revisit
+# OLD: Shift span 6 back 5 mins
+position = 487213755 # 353 18:15  353:18:15 +  0.00
+discard = true
+#minute = 19
+
+[[hint]]
+# Shift span 7 - fit calibration test
+#position = 490363266 # 353 01:59  354:01:53 -  0.00
+position = 489651839  # 353 00:15  354:00:09 +  0.00
+day = 355
+hour = 1
+minute = 15
+
+[[hint]]
+# Discard span 8 - ~23.5 hr, cannot confirm timing, maybe revisit
+position = 598145561 # 001 00:45  001:00:45 +  0.00
+discard = true
+
+[[hint]]
+# Discard span 11 - ~ 10 hrs, cannot confirm timing
+position = 621171223 # 002 08:45  002:08:45 -  0.00
+discard = true
+
+#[[hint]]
+# Discard span 12 - ~5 hrs, cannot confirm timing
+#position = 625443211 # 002 18:44  002:18:44 -  0.00
+#discard = true

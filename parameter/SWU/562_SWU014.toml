@@ -1,0 +1,40 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 562
+station_code = "SWU"
+reel_number = 14
+
+[tape.epoch]
+start_year = 1988
+start_month = 3
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "SWU/562_SWU014_NG_20200306.tpc5"
+
+[[hint]] 
+# Discard span 1 - ~ 37 mins, cannot confirm timing, bad ts
+position = 262572677 # 134 21:19  135:21:19 -  0.00
+discard = true
+
+[[hint]]
+# Discard span 2 - ~ 14.5 hrs, cannot confirm timing, bad ts
+position = 262987283 # 134 22:17  134:22:17 -  0.00
+discard = true
+
+[[hint]]
+# Discard span 3 - ~ 7 mins, cannot confirm timing
+position = 268469426 # 135 12:32  135:12:32 -  0.00
+discard = true
+
+[[hint]]
+# Discard span 4 - ~ 11.5 hrs, cannot confirm timing, maybe revisit
+position = 270267308 # 194 03:15  194:03:15 +  0.00
+discard = true
+# TODO start/end dates of entire tape are way off???!!

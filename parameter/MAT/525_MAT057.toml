@@ -1,0 +1,45 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 525
+station_code = "MAT"
+reel_number = 57
+
+[tape.epoch]
+start_year = 1979 # written down as 1979-02-01--1979-04-09; but actually starting on Jan.29
+start_month = 1
+time_zone_offset = 9  # JST
+
+[tape.clock.generation_2]
+signal_polarity_inverted = true
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "MAT/525_MAT057_NG_20181105.tpc5"
+
+[[hint]]
+# Discard span 0 - ~12.5 hrs, cannot confirm, maybe revisit
+# OLD: Shift span 0 to fit with following span
+position = 74214 # 029 12:40  029:12:40 -  0.00
+discard = true
+#hour = 21
+
+[[hint]]
+# Shift span 2 to fit calibration test by 9 hours
+position = 5231686 # 030 01:20  030:01:20 -  0.00
+hour = 10
+
+[[hint]]
+# Discard Span 3 - ~92.5 hrs, cannot confirm, should revisit, salvagable
+position = 172761359 # 047 10:25  151:10:25 -  0.00
+discard = true
+#day = 47
+
+
+[[hint]]
+# Discard span 4 - ~1 hr, cannot confirm
+position =  210453628 # 051 11:00  951:03:00 -  0.00
+discard = true
+#day = 51
+

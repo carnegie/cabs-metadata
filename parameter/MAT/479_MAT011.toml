@@ -1,0 +1,76 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 479
+station_code = "MAT"
+reel_number = 11
+
+[tape.epoch]
+start_year = 1969 # 1969-06-20--1969-08-30
+start_month = 6
+time_zone_offset = 0
+
+[tape.clock.generation_1]
+signal_polarity_inverted = true
+two_seconds_per_pulse = false
+extra_hour_mark = false
+discriminator_cpm = 11
+discriminator_extra_bins = 1
+marker_cycles_per_second = 7
+minute_mark_style = "one_second_mark"
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "MAT/479_MAT011_NG_20250228.tpc5"
+
+[[hint]]
+position = 51075118 # start of span 0
+day = 176
+hour = 2
+time_questionable = true
+
+[[hint]]
+position = 60990408 # start of span 1
+day = 177
+
+[[hint]]
+position = 382558049 # start of span 2
+day = 208
+cycle = "PM"
+
+[[hint]]
+position = 428377281 # Start of span 3
+day = 213
+
+[[hint]]
+position = 438615786 # Start of span 4
+day = 214
+
+[[hint]]
+position = 552077728 # start of span 5
+day = 225
+
+[[hint]]
+position = 657296534 # span 6
+day = 235
+cycle = "PM"
+
+[[hint]] # TEST
+position = 666751301 # span 6
+day = 236
+minute = 24
+cycle = "PM"
+
+[[hint]]
+position = 667140337 # span 7
+day = 236
+minute = 18
+cycle = "PM"
+
+
+[[hint]]
+position = 694743903 # span 8
+day = 239
+hour = 6
+minute = 20

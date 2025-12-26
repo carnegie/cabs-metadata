@@ -1,0 +1,30 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 501
+station_code = "MAT"
+reel_number = 33
+
+[tape.epoch]
+start_year = 1973
+start_month = 12
+time_zone_offset = 0
+
+[tape.clock.generation_1]
+signal_polarity_inverted = true
+two_seconds_per_pulse = false
+extra_hour_mark = false
+discriminator_cpm = 438
+discriminator_extra_bins = 8
+discriminator_threshold = 0.001
+minute_mark_style = "one_second_mark"
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "MAT/501_MAT033_NG_20201001.tpc5"
+
+[[hint]]
+position = 14366604
+day = 100 # FIXME: BOGUS DAY FOR TESTING
+

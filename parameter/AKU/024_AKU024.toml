@@ -1,0 +1,184 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 24
+station_code = "AKU"
+reel_number = 24
+
+[tape.epoch]
+start_year = 1978
+start_month = 1
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "AKU/024_AKU024_NG_20190401.tpc5"
+
+[[hint]]
+# Shift span 1
+position = 90874346 # 167 19:15  167:19:15 +  0.00
+day = 21
+hour = 17
+minute = 20 
+
+[[hint]]
+# Shift span 2
+position = 140883211 # 026 16:56  026:16:30 -  0.00 false
+minute = 40
+
+[[hint]]
+# Shift span 3
+position = 141080121 # 026 16:50  026:16:50 -  0.00 false
+hour = 17
+minute = 7
+
+[[hint]]
+# Shift span 3
+position = 141440962 # 026 17:18  026:17:18 -  0.00 false
+minute = 53
+
+[[hint]]
+# Shift span 3
+position = 141630029 # 026 17:40  026:17:40 -  0.00 false
+hour = 18
+minute = 20
+
+[[hint]]
+# Shift span 4
+position = 142162183 # 026 18:55  026:18:55 -  0.00 false
+hour = 19
+minute = 35
+
+[[hint]]
+# Shift span 5
+position = 142843131 # 026 20:30  026:20:30 -  0.00 false
+hour = 21
+minute = 12
+
+[[hint]]
+# Shift span 8
+position = 143544097 # 223 01:23  223:01:23 -  0.00 false
+day = 26
+hour = 23
+minute = 3
+
+[[hint]]
+# Shift span 10
+position = 210035243 # 033 14:04  ---:--:-- + 14.55 false
+day = 33 
+hour = 13 #17
+minute = 48 #11 #8
+
+[[hint]]
+# Shift span 12 (7)
+position = 318132260 # 163 15:41  163:15:41 -  0.00 false
+day = 44
+hour = 7
+
+[[hint]]
+# Shift span 13
+position = 322334271 # 215 08:45  215:08:45 -  0.00 false
+day = 44
+hour = 17
+minute = 43
+
+[[hint]]
+# Shift span 15
+position = 411139742 # 090 12:54  090:12:54 -  0.00 false
+day = 53
+hour = 13
+minute = 34
+
+[[hint]]
+# Shift span 16
+position = 411255857  #351 23:15  351:23:15 + 12.92 false
+day = 53
+hour = 13
+minute = 50
+
+[[hint]]
+# Shift span 17
+position = 411446003  #239 14:05  239:14:05 + 23.92 false
+day = 53
+hour = 14
+minute = 15
+
+[[hint]]
+# Shift span 18 (now 8)
+position = 411554688 # 073 13:55  073:13:54 + 13.87 false
+day = 53
+hour = 14
+minute = 30
+
+[[hint]]
+# Shift span 20 (now 9)
+position = 411831202 # 277 16:16  277:16:16 -  0.00 false
+day = 53 
+hour = 15
+minute = 6
+
+[[hint]]
+# Shift span 21
+position = 412179523 # 075 20:35  075:20:35 -  0.00 false
+day = 53
+hour = 15
+minute = 52
+
+[[hint]]
+# Shift span 22
+position = 412368383 # 149 23:27  149:23:27 -  0.01 false
+day = 53 
+hour = 16
+minute = 17
+
+[[hint]]
+# Shift span 23 (9)
+
+position = 412506214 # 053 16:58  263:01:58 -  0.00 false
+day = 53
+hour = 16
+minute = 35
+
+[[hint]]
+# Shift span 23 - (now 10)
+position = 412827771 # 133 23:00  133:23:00 + 17.74 false
+day = 53
+hour = 17
+minute = 25
+
+[[hint]]
+# Shift span 24
+position = 462629650 # 048 16:16  048:16:16 -  0.01 false
+day = 58
+
+[[hint]]
+# Shift span 25
+position = 462729659 # 127 00:17  127:00:17 + 18.17 false
+day = 58
+hour = 16
+minute = 35
+
+[[hint]]
+# Shift span 26
+position = 462980305 # 077 06:00  077:06:00 + 21.41 false
+day = 58
+hour = 17
+minute = 10
+
+[[hint]]
+# Shift span 29
+position = 572527793 # 347 21:20  347:21:20 -  0.00
+day = 69
+hour = 15
+minute = 33
+
+[[hint]]
+# Shift span 31
+position = 642600500 # 295 21:10  295:21:10 +  0.00
+day = 76
+hour = 13
+minute = 46

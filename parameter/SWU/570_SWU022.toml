@@ -1,0 +1,24 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 570
+station_code = "SWU"
+reel_number = 22
+
+[tape.epoch]
+start_year = 1989 # 1989-12-26--1990-03-28
+start_month = 12
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "SWU/570_SWU022_NG_20250310.tpc5"
+
+[[hint]]
+# Shift span 1 by 1 day
+position = 745509 # 361 03:40  360:03:40 -  0.00
+day = 360

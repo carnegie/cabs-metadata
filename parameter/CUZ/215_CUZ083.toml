@@ -1,0 +1,27 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 215
+station_code = "CUZ"
+reel_number = 83
+
+[tape.epoch]
+start_year = 1984
+start_month = 12
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "CUZ/215_CUZ083_NG_20171113.tpc5"
+
+[[hint]] # span 1
+position = 60980052
+day = 348 #  216
+
+[[hint]] # span 2
+position = 136658839 # 346 13:30  211:13:30 -  0.00
+day = 349 #  211

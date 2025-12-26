@@ -1,0 +1,196 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 404
+station_code = "KMU"
+reel_number = 64
+
+[tape.epoch]
+start_year = 1980
+start_month = 10
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "KMU/404_KMU064_NG_20191118.tpc5"
+
+[[hint]]
+# Discard span 16 - ~ 9.25 hrs, very noisy, cannot confirm
+position = 152883296 # 310 16:15  310:16:15 +  0.00
+discard = true
+
+[[hint]]
+# Discard span 17 - ~ 13.5 hrs, very noisy, cannot confirm
+position = 158431398 # 311 05:25  311:05:25 -  0.00 
+discard = true
+
+[[hint]]
+# Discard span 18 - ~ 6.5 hrs, very noisy, cannot confirm
+position = 165480136 # 311 22:09  311:22:09 +  0.00 
+discard = true
+
+[[hint]]
+# Discard span 19 - ~30 mins, bad TS
+position = 168575850
+discard = true
+
+[[hint]]
+# Discard 20 - ~2 hrs, maybe 2 events, noisy, cannot confirm timing, maybe revisit
+position = 168744400
+discard = true
+
+[[hint]]
+# Discard 21 - ~1 hr, noisy, maybe 1 event present, cannot confirm timing, maybe revisit 
+position = 169583250
+discard = true
+
+[[hint]]
+# Discard 22 - ~1 hr, 1st 10 mins very noisy, cannot confirm timing, 1 event present, maybe revisit
+position = 170327600
+discard = true
+
+[[hint]]
+# Discard 23 - ~1 hr, very noisy, cannot confirm timing
+position = 170944250
+discard = true
+
+[[hint]]
+# Discard span 30 - ~ 22 mins, cannot confirm
+position = 334470562 # 328 06:36  328:06:36 -  0.00
+discard = true
+
+[[hint]]
+# Discard span 32 - ~ 1.5 hrs, cannot confirm
+position = 445186815 # 339 09:14  ---:--:-- -  0.00
+discard = true
+
+[[hint]]
+# Discard span 35 - ~ 1.75 hrs, cannot confirm
+position = 502973852 # 012 00:59  ---:--:-- -  0.00
+discard = true
+
+[[hint]]
+# Discard  span 3 - ~15 mins, very noisy
+position = 101290750
+discard = true
+
+[[hint]]
+# Discard span 41 - ~1.5 hrs, very noisy, maybe revisit
+position = 504749250
+discard = true
+
+[[hint]]
+# Discard span 43 - ~13 hrs, noisy/tape slippage, cannot confirm timing, revisit?
+position = 506505500
+discard = true
+
+[[hint]]
+# Discard span 44 - ~13 mins, very noisy
+position = 511817250
+discard = true
+
+[[hint]]
+# Discard span 51 - ~6 mins, cannot confirm
+position = 569064550
+discard = true
+
+[[hint]]
+# Discard span 60 - ~ 8 hrs, very noisy. cannot confirm
+position = 614235558 # 034 11:01  +++:++:++ +  0.00
+discard = true
+
+[[hint]]
+# Discard span 61 - ~8 mins, noisy
+position = 616978995
+discard = true
+
+[[hint]]
+# Discard span 62 - ~ 8.75 hrs, very noisy, cannot confirm
+position = 617303790 # 034 20:10  ---:--:-- +  0.00
+discard = true
+
+[[hint]]
+# Discard span 64 - ~10 mins, bad TS
+position = 620865750
+discard = true
+
+[[hint]]
+# Discard span 66 - ~ 4.5 hrs, cannot confirm
+position = 621240144 # 035 07:54  ---:--:-- -  0.00
+discard = true
+
+[[hint]]
+# Discard span 26 - unable to confirm timing, possibly salvagable, revisit 
+position = 198974500
+discard = true
+
+[[hint]]
+# Discard span 27 - unable to confirm timing, possibly salvagable, revisit
+position = 200549300
+discard = true
+
+# Discard Spans #4-15 - cannot confirm any timestamps, noisy waveforms
+[[hint]]
+# span 4
+position = 103811250 
+discard = true
+
+[[hint]]
+# span 5
+position = 108285250
+discard = true
+
+[[hint]]
+# span 6
+position = 109347250
+discard = true
+
+[[hint]]
+# span 7
+position = 114929950
+discard = true
+
+[[hint]]
+# span 8
+position = 121697900
+discard = true
+
+[[hint]]
+# span 9
+position = 125340500
+discard = true 
+
+[[hint]]
+# span 10
+position = 128378500
+discard = true
+
+[[hint]]
+# span 11
+position = 132706850
+discard = true
+
+[[hint]]
+# span 12
+position = 135365500
+discard = true
+
+[[hint]]
+# span 13
+position = 145613600
+discard = true
+
+[[hint]]
+# span 14
+position = 147065250 
+discard = true
+
+[[hint]]
+# span 15
+position = 152730150 
+discard = true 
+

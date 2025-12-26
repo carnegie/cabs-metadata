@@ -1,0 +1,24 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 118
+station_code = "AKU"
+reel_number = 118
+
+[tape.epoch]
+start_year = 1998 # 1998-12-09--1999-02-19
+start_month = 12
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "AKU/118_AKU118_NG_20230223.tpc5"
+
+[[hint]]
+position = 386542472
+day = 381
+hour = 9

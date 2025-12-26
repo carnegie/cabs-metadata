@@ -1,0 +1,40 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 519
+station_code = "MAT"
+reel_number = 51
+
+[tape.epoch]
+start_year = 1977
+start_month = 8
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = true
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "MAT/519_MAT051_NG_20181026.tpc5"
+
+[[hint]]
+# Shift span 1 to fit EQ picks and calibration test
+position = 545937666 # 283 16:59  283:16:59 -  0.00
+hour = 15
+minute = 52
+
+[[hint]] # span 2 
+# Discard span 2 - ~16 hrs, cannot confirm timing, maybe revisit
+position = 690554278 # 299 07:30  120:20:24 -  0.00
+discard = true
+#day = 299
+#hour = 3
+#minute = 10
+
+
+[[hint]] # span 3
+# Discard span 3 - ~87 hrs, cannot cocnfirm timing, should revisit 
+position = 697487914 # 300 00:21  299:00:21 +  0.00
+discard = true
+#day = 300

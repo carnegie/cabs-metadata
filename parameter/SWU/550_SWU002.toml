@@ -1,0 +1,39 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 550
+station_code = "SWU"
+reel_number = 2
+
+[tape.epoch]
+start_year = 1984
+start_month = 12
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "SWU/550_SWU002_NG_20200206.tpc5"
+
+[[hint]]
+# Keep span 1 for now
+position = 213910717 # 031 05:41  031:05:41 -  0.00 false 
+time_questionable = true
+
+[[hint]]
+# Discard span 6 - ~12.5 hrs, very very noisy, maybe revisit
+position = 329556553 # 043 10:59  043:10:59 -  0.01 false
+discard = true
+
+[[hint]]
+# Keep span 7 for now
+position = 335461210 # 044 01:58  044:01:58 -  0.03 false 
+time_questionable = true
+
+[[hint]]
+# Keep span 8 for now
+position = 351701067 #  045 19:09  045:19:09 + 19.55 false
+time_questionable = true

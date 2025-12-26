@@ -1,0 +1,19 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 26
+station_code = "AKU"
+reel_number = 26
+
+[tape.epoch]
+start_year = 1978
+start_month = 8
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "AKU/026_AKU026_NG_20190404.tpc5"

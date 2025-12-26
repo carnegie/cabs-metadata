@@ -1,0 +1,76 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 50
+station_code = "AKU"
+reel_number = 50
+
+[tape.epoch]
+start_year = 1984
+start_month = 1
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "AKU/050_AKU050_NG_20190722.tpc5"
+
+
+[[hint]] # span 0
+position = 75182840
+prune = 2
+
+[[hint]] # span 1
+position = 75322323
+day = 32 #  212
+hour = 3 
+
+[[hint]]
+# Shift span 2
+position = 81129896 # 032 17:00  032:17:00 +  0.00
+minute = 2
+
+[[hint]] # span 4
+position = 323613459
+day = 57 #  212 # hour uncertain, short span
+
+[[hint]]
+# Discard span 5 - ~ 49 mins, bad ts, noisy
+position = 323627458 # 057 02:19  212:02:19 +  0.00
+discard = true 
+
+[[hint]]
+# Discard span 6 - ~ 8 mins, bad ts, noisy
+position = 332678820 # 011 01:19  011:01:19 -  0.00
+discard = true
+
+[[hint]]
+# Shift span 8
+position = 625364372 # 088 16:30  088:16:30 -  0.00
+day = 86
+
+[[hint]]
+# Shift span 9
+position = 634010041 # 089 13:02  089:13:02 +  0.00
+discard = true
+# 87
+
+[[hint]]
+# Shift span 10
+position = 634315770 # 089 13:42  089:13:42 -  0.00
+discard = true
+#day = 87
+
+[[hint]]
+# Discard span 11
+position = 634707110 # 089 14:36  089:14:36 -  0.00
+discard  = true
+#day = 87
+
+[[hint]]
+# Shift span 12
+position = 635098299  #091 15:40  091:15:40 -  0.00
+day = 87

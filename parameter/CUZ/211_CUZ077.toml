@@ -1,0 +1,43 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 211
+station_code = "CUZ"
+reel_number = 77
+
+[tape.epoch]
+start_year = 1983
+start_month = 2
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "CUZ/211_CUZ077_NG_20171107.tpc5"
+
+[[hint]]
+# Discard span 1 - ~16 mins, bad timestamps
+position = 155052241  #015 00:00  010:00:00 -  0.00
+discard = true
+
+[[hint]]
+position = 156785313 # near start of span 2
+day = 74 #
+
+[[hint]]
+# Shift span 4 - correspond with calibration test
+position = 321482509 # 131 11:59  0b1:00:00 -  0.00
+day = 91
+
+[[hint]]
+# Shift span 6 - correspond with calibration test
+position = 530620479 # 152 21:44  152:21:44 -  0.00
+day = 112
+
+[[hint]]
+# Shift span 8 - correspond with calibration test
+position = 637560025 # 163 20:36  163:20:36 -  0.00
+day = 123

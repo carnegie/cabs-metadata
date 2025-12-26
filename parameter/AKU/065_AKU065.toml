@@ -1,0 +1,51 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 65
+station_code = "AKU"
+reel_number = 65
+
+[tape.epoch]
+start_year = 1987 # 1987-07-02 -- 1987-09-13
+start_month = 7
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "AKU/065_AKU065_NG_20241016.tpc5"
+
+#alternate digitization source
+#TODO: [[digitization]] instead of [digitization] ???
+#raw_data = "AKU/065_AKU065_NG_20190816.tpc5"
+
+[[hint]] # span 3
+# Shift span 3 back
+#position = 499745661 # 233 15:01  233:15:01 +  0.00
+position = 405366679 # 224 04:30  224:04:25 -  0.00
+minute = 16 # shift back 9 mins to fix inconsistency
+#hour = 17
+#prune = 10
+
+[[hint]]
+# Shift span 4
+position = 500095115 # 233 15:40  233:15:40 -  0.00
+time-questionable = true
+
+[[hint]]
+## Shift span 5
+position = 610418662 # 244 16:30  244:16:30 -  0.00
+time_questionable = true
+#day = 245
+#hour = 8
+#minute = 40
+
+[[hint]] # span 6
+# Shift span 6 to fit with service sheet end time
+position = 675109503 # 251 03:45  252:03:45 -  0.00
+day = 251 #250
+hour = 20
+minute = 25

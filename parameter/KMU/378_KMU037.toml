@@ -1,0 +1,19 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 378
+station_code = "KMU"
+reel_number = 37
+
+[tape.epoch]
+start_year = 1974
+start_month = 12
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "KMU/378_KMU037_NG_20190823.tpc5"

@@ -1,0 +1,47 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 386
+station_code = "KMU"
+reel_number = 45
+
+[tape.epoch]
+start_year = 1976
+start_month = 7
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "KMU/386_KMU045_NG_20190905.tpc5"
+
+[[hint]]
+# Span 0006 correction based on EQ 1976-08-04T23:21:44 M5.4 ST
+# Shift up by 7mins /14 mins
+position = 133182950
+minute = 14 #8
+
+[[hint]]
+# Discard span 0 - ~4.25 hrs, cannot confirm timing, maybe revisit
+position = 88898
+discard = true
+
+[[hint]]
+# Discard span 1 - ~5.5 hrs, cannot confirm timing, a bit noisy, maybe revisit
+position = 29308088
+discard = true
+
+[[hint]]
+# Discard span 2 - ~12.75 hrs, cannot confirm timing, maybe revisit
+position = 31765501
+discard = true
+
+[[hint]]
+# Discard span 3 - ~ 60.5 hrs, cannot confirm timing, should revisit 
+position = 44150212 # 209 11:00 209:11:00
+discard = true
+#minute = 48
+

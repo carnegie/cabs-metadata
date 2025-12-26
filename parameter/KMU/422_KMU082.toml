@@ -1,0 +1,204 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 422
+station_code = "KMU"
+reel_number = 82
+
+[tape.epoch]
+start_year = 1985 # 1985-10-02 -- 1986-01-07
+start_month = 10
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = true
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "KMU/422_KMU082_NG_20241008.tpc5"
+
+[[hint]]
+# discard span 2 - ~ 5.5 hrs, cannot confirm
+position = 242645827 # 300 20:56  300:20:56 -  0.00
+discard = true
+
+[[hint]]
+# discard span 4 - only ~10 mins, only 2 timestamps, data is noisy
+position = 394708650
+discard = true
+
+[[hint]]
+# discard span 6 - ~6.5 hrs, very noisy data, maybe revisit
+position = 398041150
+discard = true
+
+[[hint]]
+# discard span 10 - ~4 hrs, very noisy data, maybe revisit
+position = 401731600
+discard = true
+
+[[hint]]
+# discard span 11 - ~4 hrs, very noisy data, maybe revisit
+position = 403779450
+discard = true
+
+[[hint]]
+# discard span 13 - ~4 hrs, very noisy data, maybe revisit
+position = 405756950
+discard = true
+
+[[hint]]
+# discard span 17 - ~4 hrs, very noisy data, maybe revisit
+position = 443554350
+discard = true
+
+[[hint]]
+# discard span 20 - ~2 hrs, very noisy data, maybe revisit
+position = 450138200
+discard = true
+
+[[hint]]
+# discard span 22 - ~4 hrs, very noisy data, maybe revisit
+position = 451450400
+discard = true
+
+[[hint]]
+# Discard span 24 - ~ 2 hrs, very noisy, cannot confirm
+position = 453409164 # 323 01:48  ---:--:-- -  0.00
+discard = true
+
+[[hint]]
+# discard span 26 - ~30 mins, short, noisy data
+position = 454458350
+discard = true
+
+[[hint]]
+# discard span 30 - ~25 mins, short, noisy data
+position = 456510550
+discard = true
+
+[[hint]]
+# discard span 33 - only ~7 mins, only 1 okay timestamp, data is noisy
+position = 459934650
+discard = true
+
+[[hint]]
+# discard span 34 - only ~14 mins, short, noisy data
+position = 460792750
+discard = true
+
+[[hint]]
+# discard span 37 - ~3 hrs, noisy data, maybe revisit
+position = 462158950
+discard = true
+
+[[hint]]
+# discard span 39 - ~8 hrs, very noisy data, revisit?
+position = 465056450
+discard = true
+
+[[hint]]
+# discard span 42 - ~ 1.75 hrs, very noisy, cannot confirm
+position = 470943732 # 324 22:05  ---:--:-- +  0.00
+discard = true
+
+[[hint]]
+# discard span 44 - ~1 hr, noisy data
+position = 472092250
+discard = true
+
+[[hint]]
+# discard span 46 - ~1 hr, noisy data
+position = 473214000
+discard = true
+
+[[hint]]
+# discard span 48 - ~ 5.25 hrs, noisy, cannot confirm
+position = 486184833 # 326 12:36  ---:--:-- ?
+discard = true
+
+[[hint]]
+# discard span 50 - ~3 hrs, noisy data, maybe revisit
+position = 493217750
+discard = true
+
+[[hint]]
+# discard span 51 - ~2.5 hrs, noisy data, maybe revisit
+position = 496411350
+discard = true
+
+[[hint]]
+# discard span 53 - only ~30 mins, short, noisy data
+position = 499307650
+discard = true
+
+[[hint]]
+# discard span 56 - ~ 12.25 hrs, very noisy, cannot confirm
+position = 509084991 # 328 22:27  ---:--:-- -  0.00
+discard = true
+
+[[hint]]
+# discard span 58 - only ~6 mins, only 1 okay timestamp, data is noisy
+position = 514946750
+discard = true
+
+[[hint]]
+# Discard span 60 - ~ 24 mins, cannot confirm
+position = 515534263 # 329 14:44  ---:--:-- -  0.00
+discard = true
+
+[[hint]]
+# discard span 62 - ~3 hrs, noisy data, maybe revisit
+position = 515871150
+discard = true
+
+[[hint]]
+# Discard span 65 - ~ 27 mins, cannot confirm
+position = 517746050 # 329 20:19  ---:--:-- -  0.00
+discard = true
+
+[[hint]]
+# discard span 66 - only ~11 mins, no reasonable timestamps, data is noisy
+position = 518128950
+discard = true
+
+[[hint]]
+# discard span 67 - ~1 hr, noisy data
+position = 518340350
+discard = true
+
+[[hint]]
+# discard span 70 - ~13.5 hrs, very noisy data, revisit?
+position = 519792350
+discard = true
+
+[[hint]]
+# discard span 71 - only ~6 mins, only 2 okay timestamps, data is noisy
+position = 527098350
+discard = true
+
+[[hint]]
+# discard span 73 - only ~10 mins, only 1 okay timestamps, data is noisy
+position = 544061250
+discard = true
+
+[[hint]]
+# discard span 74 - only ~10 mins, short, noisy data
+position = 550953550
+discard = true
+
+[[hint]]
+# discard span 76 - ~ 12.5 hrs, very noisy, cannot confirm
+position = 707657387 # 349 18:58  349:18:58 -  0.00
+discard = true
+
+[[hint]]
+# discard span 77 - ~2 hrs, noisy data, maybe revisit?
+position = 715235450
+discard = true
+
+[[hint]]
+# discard span 78 - only ~40 mins, short, noisy data
+position = 722365200
+discard = true

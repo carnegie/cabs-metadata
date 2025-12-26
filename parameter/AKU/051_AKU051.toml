@@ -1,0 +1,46 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 51
+station_code = "AKU"
+reel_number = 51
+
+[tape.epoch]
+start_year = 1984
+start_month = 4
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "AKU/051_AKU051_NG_20190722.tpc5"
+
+
+[[hint]] # span 1
+# Discard span 1 - ~ 28 mins, cannot confirm timing, bad ts.
+position = 87282541
+discard = true
+#day = 105 #  212
+#hour = 4
+
+[[hint]] # span 2
+# Discard span 2 - ~ 12.25 hs=rs, cannot confirm timing, bad ts
+position = 92552079
+discard = true
+#day = 105 
+#hour = 16
+
+[[hint]] # span 5
+# Discard span 5 - ~ 4 hrs, cannot confirm timing, bad ts
+position = 555077061
+discard = true
+#day = 151
+#hour = 13
+
+[[hint]] # try
+# Shift span 6 back
+position = 556713769 # 152 17:18  152:17:18 -  0.00
+day = 151

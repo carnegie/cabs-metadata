@@ -1,0 +1,32 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 504
+station_code = "MAT"
+reel_number = 36
+
+[tape.epoch]
+start_year = 1974
+start_month = 7
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = true
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "MAT/504_MAT036_NG_20181109.tpc5"
+
+[[hint]]
+# Shift span 1 back by ~1 min - merged into span 0
+position = 75335318 #75332318 208 00:34  208:00:34 +
+minute = 35
+
+[[hint]]
+# Discard span 1 - ~ 16.75 hrs, cannot confirm timing, should revisit
+# OLD: Correct day for span 1
+position = 180507774 # 279 01:11  2f9:01:11 -  0.00
+discard = true
+#day = 219
+#hour = 7

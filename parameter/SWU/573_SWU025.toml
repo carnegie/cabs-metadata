@@ -1,0 +1,33 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 573
+station_code = "SWU"
+reel_number = 25
+
+[tape.epoch]
+start_year = 1990 # 1990-07-26--1990-08-10
+start_month = 7
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "SWU/573_SWU025_NG_20250424.tpc5"
+
+
+[[hint]]
+# Discard span 2 - ~ 41 mins, noisy, bad TS
+position = 149945571 #(TODO simply remove this span, it's just garbage)
+discard = true
+#day = 222 #  269 00:51  269:06:51 +
+#hour = 20
+
+[[hint]]
+# Discard span 1 - ~ 19 mins, bad TS
+position = 149794436 # 334 00:51  334:00:51 +  0.00
+discard = true
+

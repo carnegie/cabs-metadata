@@ -1,0 +1,55 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 59
+station_code = "AKU"
+reel_number = 59
+
+[tape.epoch]
+start_year = 1986
+start_month = 1
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "AKU/059_AKU059_NG_20190808.tpc5"
+
+[[hint]]
+position = 547061490 # 073 00:20  000:00:20 -  0.00 false
+hour = 19
+
+[[hint]]
+# Shift span 34
+position = 558205965 # 072 11:36  ---:--:-- -  0.00 false
+day = 74
+hour = 21
+
+[[hint]]
+# Shift span 30
+position = 547061490 # 365 00:20  000:00:20 -  0.00
+day = 73
+
+[[hint]]
+# Shift span 39
+position = 594419814 # 078 00:01  078:13:20 -  0.00
+hour = 13
+minute = 20
+
+[[hint]]
+position = 707630768
+day = 99 #  212 17:19  212:17:19 -
+
+[[hint]]
+position = 708615641
+day = 100 #  214 14:17  214:06:14 +
+
+[[hint]]
+#Shift span 61 
+position = 707444839 # 212 02:20  212:02:20 +  0.00
+day = 99
+hour = 12 
+minute = 5

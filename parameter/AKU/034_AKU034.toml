@@ -1,0 +1,85 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 34
+station_code = "AKU"
+reel_number = 34
+
+[tape.epoch]
+start_year = 1980 # 1980-08-08--1980-10-19 (cover sheet had incorrect start date 9.Aug)
+start_month = 8
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "AKU/034_AKU034_NG_20250415.tpc5"
+
+[[hint]]
+# Shift span 0 to service sheet start time
+position = 446031 # 166 17:37  166:17:37 -  0.00
+day = 221
+minute = 38
+
+[[hint]]
+# Span 1
+position = 9075791
+day = 222 #  246 19:04  246:19:04 +
+hour = 14
+
+[[hint]]
+position = 9245664 # span 2 -- ANCHOR SPAN LIKELY MOSTLY CORRECT
+day = 222 # Field notes mention tape start and calibration on 9. Aug 1980.
+          # Notes also mention clock programmed around 14:38 to day 221, which was incorrect:
+          # Since 1980 was a leap year, 9. Aug should have been day 222.
+
+[[hint]]
+position = 41158908 # 225 18:45  cd8:12:45 +  6.42 false
+day = 225 # changing day first and hour next causing problem due to underflow????
+hour = 18 
+minute = 1
+
+[[hint]]
+position = 50689867 # 225 16:37  1d9:16:37 -  0.00 false # start span 4
+day = 226 # experimental
+
+[[hint]]
+position = 70814892 # start span 4
+day = 228 # 352 00:30  352:00:
+hour = 16
+minute = 19
+
+[[hint]]
+position = 81807665 # start span 5
+day = 229 # 153 18:21  153:18:21 -
+hour = 18
+
+[[hint]]
+# Shift span 7
+position = 161967726 # 112 22:10  112:32:10 +  0.00 
+day = 237
+hour = 16
+minute = 13
+
+[[hint]]
+# Shift span 8
+position = 171222628 # 138 14:10  138:14:10 +  0.00 
+day = 238
+
+[[hint]]
+# Shift span 9
+position = 718836337 # 295 15:32  192:15:32 -  0.00 false
+day = 292
+
+[[hint]]
+# Discard span 10 - ~ 7 mins, bad ts
+position = 718952825 # 228 00:42  228:00:42 + 10.06 false 
+discard = true
+
+[[hint]]
+# Shift span 11
+position = 719069246 # 228 16:00  228:16:00 +  9.43 false 
+day = 292

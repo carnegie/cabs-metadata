@@ -1,0 +1,26 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 169
+station_code = "CUZ"
+reel_number = 26
+
+[tape.epoch]
+start_year = 1971 # 1971-10-20--1972-01-02
+start_month = 10
+time_zone_offset = 0
+
+[tape.clock.generation_1]
+signal_polarity_inverted = true
+two_seconds_per_pulse = false
+extra_hour_mark = false
+discriminator_cpm = 288
+discriminator_extra_bins = 5
+discriminator_threshold = 0.0015
+minute_mark_style = "one_second_mark"
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "CUZ/169_CUZ026_NG_20250131.tpc5"
+

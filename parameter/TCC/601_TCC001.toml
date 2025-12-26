@@ -1,0 +1,26 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 601
+station_code = "TCC"
+reel_number = 1 # 1A
+
+[tape.epoch]
+start_year = 1965 # 1965-06-22--1965-07-27
+start_month = 6
+time_zone_offset = 0
+
+[tape.clock.generation_1]
+signal_polarity_inverted = true
+two_seconds_per_pulse = true
+extra_hour_mark = true
+discriminator_cpm = 11
+discriminator_extra_bins = 0
+discriminator_threshold = 15.0
+minute_mark_style = "one_second_mark_over_half_rate_pulses"
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "TCC/601_TCC001_NG_20250306.tpc5"
+

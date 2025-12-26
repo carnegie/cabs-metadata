@@ -1,0 +1,225 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 13
+station_code = "AKU"
+reel_number = 13
+
+[tape.epoch]
+start_year = 1975
+start_month = 3
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "AKU/013_AKU013_NG_20190321.tpc5"
+
+[[hint]]
+# Shift span 0 
+position = 10107833 # 072 17:03  072:17:20 -  0.00 false
+minute = 7
+
+[[hint]]
+# Shift span 1 
+position = 10253251 # 072 17:40  072:17:40 -  0.00 false
+minute = 44 
+
+[[hint]]
+position = 40476156 # start span 3
+day = 75 #  074 18:10  074:18:10 +
+
+[[hint]]
+position = 49584815 # start span 4
+day = 76 #  074 16:01  075:16:01 +
+
+[[hint]]
+position = 80596731 # start span 5
+day = 79 #  077 18:29  077:18:29 +
+
+[[hint]]
+position = 92384619 # start span 6
+day = 80 #  077 22:49  078:22:49 +
+minute = 51
+
+[[hint]]
+position = 110077455 # start span 7
+day = 82 #  189 17:16  189:17:16 -
+
+[[hint]]
+# Discard span 7 - ~ 56 mins, very noisy
+position = 117144702 # start span 7
+discard = true
+
+[[hint]]
+# Shift span 8
+position = 117526801 # 186 00:57  186:00:57 +  8.47 false
+day = 83
+hour = 11
+minute = 15
+time_questionable = true
+
+[[hint]]
+position = 117686197 # start span 9
+day = 83 #  191 11:38  041:09:21 -   EXPERIMENTAL
+time_questionable = true
+
+[[hint]]
+position = 120128685 # end span 10
+day = 83 #  191 18:38  191:18:38 -
+time_questionable = true
+###### up to span 12 everything seems ok now
+
+[[hint]]
+# Discard span 11 - ~ 1 hr, very noisy
+position = 120352365 # 083 19:09  083:19:09 +  8.89 false
+discard = true
+
+[[hint]]
+# Shift span 12
+position = 120726313 # 069 21:00  069:21:00 +  6.86 false
+day = 83
+hour = 20
+minute = 3
+time_questionable = true
+
+[[hint]]
+# Shift span 12
+position = 120857564 # 083 20:25  155:18:25 +  6.77 false
+day = 83  # 155 00:25  155:18:25 +
+hour = 20 # EXPERIMENTAL
+time_questionable = true
+
+[[hint]]
+# Shift span 13
+position = 124859805 # 085 02:00  063:02:00 +  8.41 false
+day = 84
+hour = 6
+time_questionable = true
+
+[[hint]]
+# shift span 14
+position = 125702101 # 084 10:45  363:10:45 -  0.00 false
+day = 84
+hour = 8
+minute = 20
+time_questionable = true
+
+[[hint]]
+# Shift span 14
+position = 126096262 # 084 09:14  275:17:30 -  0.00 false
+day = 84  # 275 17:00  275:17:00 +
+hour = 9
+minute = 14
+time_questionable = true
+
+[[hint]]
+# shift span 15
+position = 128098960 # 195 02:40  195:02:40 -  0.00 false
+day = 84
+hour = 14
+minute = 58
+time_questionable = true
+
+[[hint]]
+# Shift span 15
+position = 129563532 # 084 17:27  084:17:34 +  8.62 false
+day = 84
+minute = 27
+time_questionable = true
+
+[[hint]]
+# Shift span 16
+position = 137847701 # 117 17:16  117:17:16 -  0.00 false
+day = 85
+hour = 13
+minute = 10
+
+[[hint]]
+# Shift span 16
+position = 138332531 # 085 14:16  237:23:16 -  0.00 false
+day = 85
+hour = 14
+time_questionable = true
+
+[[hint]]
+# Shift span 17
+position = 148776276 # 060 18:50  060:18:50 -  0.00 false
+day = 86
+hour = 15
+minute = 33
+######## span 24 likely ok
+
+[[hint]]
+# Discard span 18 - ~ 15 mins, very very noisy
+position = 319703702 # 103 18:21  103:18:21 -  0.00 false
+discard = true
+
+[[hint]]
+# Shift span 19 
+position = 319873136 # 213 18:42  103:18:43 +  8.58 false
+day = 103
+
+[[hint]]
+# Discard span 20 - ~ 56 mins, very noisy
+position = 468551314 # 228 16:00  228:16:00 +  8.04 false
+discard = true
+
+[[hint]]
+# Discard span 22 - ~ 40 mins, very noisy
+position = 483833598 # 312 03:10  312:03:10 +  8.60 false
+discard = true
+
+[[hint]]
+# Discard span 23 - ~ 36 mins, very noisy
+position = 484133408 # 274 22:58  274:22:58 -  0.00 false
+discard = true
+
+[[hint]]
+# Shift span 24
+position = 485089668 # 183 01:00  183:01:00 +  8.74 false
+day = 120
+hour = 7
+minute = 40
+time_questionable = true
+
+[[hint]]
+# Shift span 25
+position = 488918583 # 038 05:00  038:05:00 +  9.12 false
+day = 121
+hour = 16
+minute = 58
+time_questionable = true
+
+[[hint]]
+# Shift span 25
+position = 491481884 #050 23:08  050:23:08 +  9.38 false
+day = 121
+hour = 13
+time_questionable = true
+
+[[hint]]
+# Shift span 25
+position = 491454193 # 120 23:04  050:23:04 +  9.40 false
+day = 121
+hour = 23
+time_questionable = true
+
+[[hint]]
+position = 498984819 # end span 26
+day = 121 # 238 07:30  238:07:30 
+hour = 17
+minute = 10
+
+[[hint]]
+# Span 26
+position = 629112491 # 144 17:45  144:17:45 -  0.01 false
+day = 134
+
+[[hint]]
+# Span 27
+position = 705591289 # 152 09:25  142:09:25 -  0.00
+day = 142

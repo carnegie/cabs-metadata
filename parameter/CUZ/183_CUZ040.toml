@@ -1,0 +1,44 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 183
+station_code = "CUZ"
+reel_number = 40
+
+[tape.epoch]
+start_year = 1974
+start_month = 7
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "CUZ/183_CUZ040_NG_20170707.tpc5"
+
+[[hint]]
+position = 348002180 # Span 1: short (6 minutes) and time inconsistent
+discard = true
+
+[[hint]]
+position = 393367602 # Span 8: short (11 minutes; 2 time stamps), isolated
+discard = true
+
+[[hint]]
+position = 396775934 # Span 9: short (8 minutes; 3 time stamps), isolated
+discard = true
+
+[[hint]]
+position = 403447875 # Span 10: short (7 minutes; 4 time stamps), isolated
+discard = true
+
+[[hint]]
+position = 434152538 # span 11: short (6 minutes; 3 time stamps), isolated
+discard = true
+
+[[hint]]
+position = 533380572 # Span 14: short (10 minutes; 2 time stamps), isolated
+discard = true
+

@@ -1,0 +1,73 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 205
+station_code = "CUZ"
+reel_number = 71
+
+[tape.epoch]
+start_year = 1981
+start_month = 9
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "CUZ/205_CUZ071_NG_20171117.tpc5"
+
+[[hint]]
+# Shift span 0
+position = 154196 # 267 19:38  267:19:38 -  0.00
+day = 247
+
+[[hint]] 
+# Shift span 1 
+position = 146822343 # 284 18:20  2a4:18:20 -  0.00
+day = 264
+
+[[hint]]
+# Discard span 8 - ~ 22 hrs, noisy, cannot confirming timining
+# OLD: shift span 8 - fit with other spans
+position = 218241833 # 291 15:25  2b2:01:21 -  0.00
+discard = true
+#day = 271
+
+[[hint]]
+# Shift span 25
+position = 241902637 # 278 21:10  278:21:10 +  0.00
+minute = 15
+
+#day = 268
+
+[[hint]]
+# Shift span 26
+position = 310543287 # 265 23:38  2a5:21:50 -  0.00
+day = 285
+
+
+[[hint]]
+# Shift span 27
+position = 414191278 # 276 14:45  276:14:45 -  0.00 
+day = 296
+
+[[hint]]
+# Discard span 29 - ~ 41 mins, very noisy
+# OLD: Shift span 29
+position = 477563941 # 283 02:30  283:02:30 -  0.00
+discard = true
+#day = 303
+
+[[hint]]
+# Discard span 31 - ~ 1.5 hrs, noisy
+# OLD: Shift span 31
+position = 477948931 # 283 03:30  283:03:30 -  0.00
+discard = true
+#day = 303 
+
+[[hint]] 
+# Discard span 32 - ~ 14 mins, noisy
+position = 492332812 # 309 06:15  889:06:15 +  0.00
+discard = true

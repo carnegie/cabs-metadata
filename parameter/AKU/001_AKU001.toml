@@ -1,0 +1,19 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 1
+station_code = "AKU"
+reel_number = 1
+
+[tape.epoch]
+start_year = 1972 # 1972-07-26--1972-09-30
+start_month = 7
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "AKU/001_AKU001_NG_20250115_part3_aborted.tpc5" # two other parts - may all be useless

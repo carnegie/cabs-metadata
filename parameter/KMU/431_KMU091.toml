@@ -1,0 +1,20 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 431
+station_code = "KMU"
+reel_number = 91
+
+[tape.epoch]
+start_year = 1988 # 1988-01-07 -- 1988-04-01
+start_month = 1
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = true
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "KMU/431_KMU091_NG_20241113.tpc5"
+

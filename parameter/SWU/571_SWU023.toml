@@ -1,0 +1,40 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 571
+station_code = "SWU"
+reel_number = 23
+
+[tape.epoch]
+start_year = 1990 # 1990-03-28--1990-06-12
+start_month = 3
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "SWU/571_SWU023_NG_20250424.tpc5"
+
+[[hint]]
+# Discard span 7 - ~ 12 hrs, cannot confirm timing, very very noisy
+position = 358640781 # 123 19:04  123:19:04 +  0.00
+discard = true
+
+[[hint]]
+# Discard span 8 - ~16 hrs, cannot confirm timing, very very noisy
+position = 370180342
+discard = true
+#day = 124 # 125 23:28  125:23:28 -
+
+[[hint]]
+# Discard span 9 - ~ 29.5 hrs, cannot confirm timing, very noisy
+position = 372195263 # 125 04:27  125:04:27 -  0.00
+discard = true
+
+[[hint]]
+# Discard span 10 - ~ 51 mins, very very noisy, bad TS
+position = 384285268 # 126 10:12  013:c3:00 +  0.00
+discard = true

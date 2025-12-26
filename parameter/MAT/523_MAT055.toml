@@ -1,0 +1,106 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 523
+station_code = "MAT"
+reel_number = 55
+
+[tape.epoch]
+start_year = 1978
+start_month = 8
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = true
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "MAT/523_MAT055_NG_20181101.tpc5"
+
+[[hint]]
+# Shift span 1
+position = 209729681 # 243 23:45  243:23:45 -  0.00
+minute = 42
+
+[[hint]]
+# Shift span 4
+position = 339557704 # 257 10:34  251:10:34 -  0.00
+day = 257
+hour = 6
+
+[[hint]]
+# Shift span 5
+position = 340398304 # 151 10:25  151:10:25 -  0.00 
+day = 257
+hour = 6
+minute = 35
+
+[[hint]]
+# Shift span 8
+position = 362794332 # 259 14:55  259:14:55 -  0.00
+minute = 35
+
+[[hint]]
+# Shift span 9
+position = 362987958 # 259 15:26  259:15:26 -  0.00
+minute = 10
+
+[[hint]]
+# Discard span 8 - 29 mins, cannot confirm
+position = 367499036 # 260 06:40  260:07:40 -  0.04 false
+discard = true
+
+[[hint]]
+# Discard span 10 - 42 mins, cannot confirm 
+position = 369716009 # 260 13:57  260:13:57 -  0.06 false
+discard = true
+
+
+[[hint]]
+# Discard span 12 - 53 mins, cannot confirm
+position = 370243896 # 261 00:48  261:00:48 + 19.12 false
+discard = true
+
+[[hint]]
+# Discard span 13 - 37 mins, cannot confirm
+position = 370751192 # 261 01:58  261:01:58 -  0.03 false
+discard = true
+
+[[hint]]
+# Discard span 14 - ~26.5 hrs, timing is off, should revisit
+position = 371135195 # 261 01:14  261:03:04 + 19.70 false
+discard = true
+#hour = 3
+#minute = 4
+
+[[hint]]
+# Discard - 9 mins
+position = 382289643 # 262 06:22  262:06:22 -  0.01 false
+discard = true
+
+[[hint]]
+# Discard span 15 - 7 mins
+position = 382379866  #262 06:33  262:06:33 -  0.01 false
+discard = true
+
+[[hint]]
+# Discard - 13 mins
+position = 383054552 # 262 07:49  262:07:49 -  0.02 false
+discard = true
+
+[[hint]]
+# Discard span 17 - 13 mins, cannot confirm
+position = 391355776 # 262 17:00  262:17:43 -  0.03 false
+discard = true
+
+[[hint]]
+# Discard span 18 - timing off, should revisit
+position = 399706124 # 263 14:10  263:09:07 + 15.41 false
+discard = true
+
+[[hint]]
+# Discard span 19 - timing off, should revisit
+position = 399903214 # 263 14:36  263:09:36 -  0.00
+discard = true
+

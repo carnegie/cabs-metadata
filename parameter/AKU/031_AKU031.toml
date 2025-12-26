@@ -1,0 +1,34 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 31
+station_code = "AKU"
+reel_number = 31
+
+[tape.epoch]
+start_year = 1980
+start_month = 1
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "AKU/031_AKU031_NG_20190408.tpc5"
+
+[[hint]]
+# Keep span 1 for now- ~ 300.5 hrs, good ts, unverified, should revisit
+position = 592384759 # 061 22:18  061:22:18 -  0.00
+time_questionable = true
+
+[[hint]]
+# Discard span 2 - ~ 20 mins, cannot confirn
+position = 719020121 # 074 10:03  074:10:03 +  0.00
+discard = true
+
+[[hint]]
+# Discard span 3 - ~ 20.5 hrs, cannot confirm, maybe revisit
+position = 719243347 # 074 11:00  074:11:00 +  0.00
+discard = true

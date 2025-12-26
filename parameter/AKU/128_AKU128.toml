@@ -1,0 +1,28 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 128
+station_code = "AKU"
+reel_number = 128
+
+[tape.epoch]
+start_year = 2000 # 2000-11-25--2001-01-22
+start_month = 11
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "AKU/128_AKU128_NG_20230504.tpc5"
+
+[[hint]] # span 15
+position = 529746818
+day = 383
+hour = 3
+
+[[hint]] # span 16
+position = 532377824
+hour = 9

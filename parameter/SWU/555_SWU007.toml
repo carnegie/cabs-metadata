@@ -1,0 +1,19 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 555
+station_code = "SWU"
+reel_number = 7
+
+[tape.epoch]
+start_year = 1986
+start_month = 5
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "SWU/555_SWU007_NG_20200224.tpc5"

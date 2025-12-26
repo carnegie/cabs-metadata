@@ -1,0 +1,19 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 415
+station_code = "KMU"
+reel_number = 75
+
+[tape.epoch]
+start_year = 1983
+start_month = 11
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = true
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "KMU/415_KMU075_NG_20191205.tpc5"

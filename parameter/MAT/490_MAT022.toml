@@ -1,0 +1,38 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 490
+station_code = "MAT"
+reel_number = 22
+
+[tape.epoch]
+start_year = 1971 # 1971-09-09--1971-11-21
+start_month = 9
+time_zone_offset = 0
+
+[tape.clock.generation_1]
+signal_polarity_inverted = true
+two_seconds_per_pulse = false
+extra_hour_mark = false
+#discriminator_cpm = 13
+#discriminator_extra_bins = 2
+discriminator_cpm = 420  # 
+discriminator_extra_bins = 5
+discriminator_threshold = 0.1
+minute_mark_style = "one_second_mark"
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "MAT/490_MAT022_NG_20250226.tpc5"
+
+[[hint]]
+position = 486162
+day = 252
+hour = 2 # guess  --- 02:06-  ---:--:-- +
+
+[[hint]]
+position = 26999128
+day = 260
+hour = 0 # guess  --- --:---  ---:--:-- +
+

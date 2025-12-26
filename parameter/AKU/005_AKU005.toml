@@ -1,0 +1,58 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 5
+station_code = "AKU"
+reel_number = 5
+
+[tape.epoch]
+start_year = 1973 # 1973-05-04--1973-07-07
+start_month = 5
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "AKU/005_AKU005_NG_20250113_part2.tpc5" # 2 parts - may need to handle also part 1?
+
+[[hint]]
+# Shift span 0
+position = 9646840 # 154 04:08  164:04:08 +  9.54 false
+day = 140
+minute = 38
+
+[[hint]]
+# Shift span 1
+position = 10072288 # 164 05:16  164:05:16 -  0.00 false
+day = 140
+minute = 44
+
+[[hint]]
+# Shift span 12
+position = 11019879 # 164 07:39  164:07:39 -  0.01 false
+day = 140
+hour = 8
+minute = 9
+
+[[hint]]
+# shift span 3
+position = 26143759 # 165 21:07  165:21:07 +  8.13 false
+day = 141
+hour = 21
+minute = 35
+
+[[hint]]
+# Shift span 4
+position = 212841878 # 184 17:20  184:17:20 -  0.00 false
+day = 160
+hour = 17
+minute = 45
+
+[[hint]]
+# Discard span 3 (now) - ~ 25 hrs, very noisy, maybe revisit
+position = 328988273 # 195 22:30  206:32:30 -  0.00
+discard = true
+

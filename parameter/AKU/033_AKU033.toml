@@ -1,0 +1,144 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 33
+station_code = "AKU"
+reel_number = 33
+
+[tape.epoch]
+start_year = 1980
+start_month = 5
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "AKU/033_AKU033_NG_20190411.tpc5"
+
+
+[[hint]]
+# Shift span 1
+position = 15607573 # 160 07:26  160:07:26 -  0.00 false
+day = 151
+hour = 6
+minute = 54
+
+[[hint]]
+# shift span 2
+position = 147105369 # 164 06:22  287:18:10 +  7.08 false
+day = 164 
+hour = 6
+minute = 28
+
+[[hint]]
+position = 150765471 # start span 3
+day = 164 # 101 15:39  101:15:39 -
+hour = 15
+minute = 9
+
+[[hint]]
+# Shift span 4
+position = 162387745 # 213 20:20  213:30:20 -  0.00 false
+day = 165
+minute = 15
+
+[[hint]]
+# Shift span 5
+position = 171494642 # 218 16:37  218:16:37 +  8.25 false
+day = 166
+#hour = 17
+minute = 43
+
+[[hint]]
+# Shift span 6
+position = 205978032 # 222 02:15  222:02:15 +  9.40 false
+day = 170 
+#hour = 3
+minute = 10
+
+[[hint]]
+# Shift span 7
+position = 286982344 # 178 01:50  230:01:50 -  0.00 false
+day = 178
+minute = 35
+
+[[hint]]
+# Shift span 8
+position = 287109173 # 230 02:20  230:02:08 +  9.28 false
+day = 178
+minute = 20
+
+[[hint]]
+# Shift span 9
+position = 395919187 # 366 23:20  622:33:20 -  0.00 false
+day = 188
+hour = 19
+minute = 37 # 50 
+
+[[hint]]
+# Shift span 10
+position = 486369669 # 200 17:30  168:17:30 -  0.01 false
+day = 197 #192
+hour = 17
+
+[[hint]]
+# Shift span 11
+position = 489746179 # 200 02:01  169:02:01 +  7.74 false
+day = 198 
+
+[[hint]]
+# Shift span 12
+position = 497199439 #170 19:34  170:19:34 -  0.00 false
+day = 198
+
+[[hint]]
+# Shift span 13
+position = 506903013 # 199 18:21  171:18:35 -  0.00 false
+day = 199 
+minute = 30
+
+[[hint]]
+# Shift span 14
+position = 617404635 # 210 16:22  537:22:36 -  0.00 false
+day = 210
+hour = 15
+minute = 59
+
+[[hint]]
+# Shift span 15
+position = 617568434 # 138 16:28  138:16:28 +  7.33 false 
+day = 210
+minute = 29
+
+[[hint]]
+# Shift span 16
+position = 678663032 # 122 00:45  122:00:45 -  0.00 false
+day = 216 
+minnute = 46
+
+[[hint]]
+# Shift span 18
+position = 707832156 # 220 14:02  128:14:02 +  8.43 false
+day = 219
+hour = 23
+
+[[hint]]
+# Shift span 19
+position = 711062732 #  362 07:00  362:07:00 +  6.84 false
+day = 220 
+
+[[hint]]
+# Shift span 20
+position = 715715164 # 362 18:00  362:18:00 +  7.19 false 
+day = 221
+#hour = 8
+minute = 42
+
+[[hint]]
+# Shift span 21 - fit with service sheet
+position = 715817614 # 165 08:56  165:08:56 +  7.14 false
+day = 221
+hour = 18 

@@ -1,0 +1,20 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 572
+station_code = "SWU"
+reel_number = 24
+
+[tape.epoch]
+start_year = 1990 # 1990-06-12--1990-07-26
+start_month = 6
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "SWU/572_SWU024_NG_20250424.tpc5"
+

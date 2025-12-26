@@ -1,0 +1,23 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 202
+station_code = "CUZ"
+reel_number = 68
+
+[tape.epoch]
+start_year = 1980
+start_month = 12
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "CUZ/202_CUZ068_NG_20170809.tpc5"
+
+[[hint]]
+position = 175836 # 004 17:56  016:17:56 -  
+day = 361  # day must be earlier, but not clear by how much!?

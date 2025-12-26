@@ -1,0 +1,44 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 61
+station_code = "AKU"
+reel_number = 61
+
+[tape.epoch]
+start_year = 1986
+start_month = 9
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "AKU/061_AKU061_NG_20190809.tpc5"
+
+[[hint]] # span 3
+position = 310745904
+day = 286 #  218
+
+[[hint]] # span 4
+position = 570841344 # 312 16:20  036:20:20 -  0.00
+day = 312 #  036
+hour = 16 #17
+minute = 6 #16
+
+[[hint]] # span 5
+position = 590954475 # 314 17:15  239:16:14 +  0.00
+day = 314
+hour = 16 
+
+[[hint]]
+position = 668124183 # 322 02:22  112:02:22 +  0.00
+day = 322
+hour = 8
+minute = 59
+
+[[hint]]
+position = 670973533
+day = 322 # 312

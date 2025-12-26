@@ -1,0 +1,42 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 206
+station_code = "CUZ"
+reel_number = 72
+
+[tape.epoch]
+start_year = 1981
+start_month = 12
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "CUZ/206_CUZ072_NG_20170811.tpc5"
+
+[[hint]]
+position = 97820087 # span 2
+day = 351 #  361
+
+[[hint]]
+# Discard span 3 - ~5 hrs, noisy, cannot confirm timing
+position = 101143979 # 351 10:10  361:10:10 +  0.00
+discard = true
+
+[[hint]]
+position = 103149818 # span 9
+day = 351 #  361
+
+[[hint]]
+# Discard span 5 - ~ 14.5 hrs, noisy, cannot confirm timing
+position = 493588644 # 027 00:20  027:00:20 +  0.00
+discard = true
+
+[[hint]]
+position = 626225784
+day = 405
+

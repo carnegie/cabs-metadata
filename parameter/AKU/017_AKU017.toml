@@ -1,0 +1,29 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 17
+station_code = "AKU"
+reel_number = 17
+
+[tape.epoch]
+start_year = 1976
+start_month = 5
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "AKU/017_AKU017_NG_20190322.tpc5"
+
+[[hint]]
+# Discard span 0 - ~ 13 hrs, cannot confirm timing
+position = 102156 # 142 16:27  142:16:27 -  0.00
+discard = true
+
+[[hint]]
+# Discard span 1 - ~ 33 mins, noisy, cannot confirm timing
+position = 5519819 # 143 05:34  143:05:34 -  0.00
+discard = true

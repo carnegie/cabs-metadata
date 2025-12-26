@@ -1,0 +1,19 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 188
+station_code = "CUZ"
+reel_number = 45
+
+[tape.epoch]
+start_year = 1975
+start_month = 8
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "CUZ/188_CUZ045_NG_20170725.tpc5"

@@ -1,0 +1,71 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 53
+station_code = "AKU"
+reel_number = 53
+
+[tape.epoch]
+start_year = 1984
+start_month = 9
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "AKU/053_AKU053_NG_20190725.tpc5"
+
+[[hint]]
+# Shift span 0 to fit with service sheet start time
+position = 98587 # 253 16:08  253:16:08 +  0.00 
+day = 254
+
+[[hint]]
+# Discard span 2 - ~ 13 mins, very very noisy
+position = 7644568 # 312 03:22  312:03:22 -  0.00 false
+discard = true
+
+[[hint]]
+position = 7840173 # start span 3
+day = 255 # 212 00:33  212:02:33 +
+hour = 10
+
+[[hint]]
+position = 9960976 # start span 4
+#day = 257 # 212 05:21  212:05:21 -
+discard = true
+
+[[hint]]
+# Shift span 5
+position = 10094964 # 264 16:09  264:16:09 +  5.76 false
+day = 255 
+#minute = 59
+
+[[hint]]
+# Shift span 6
+position = 35095838 # 366 05:13  492:05:13 +  6.91 false
+day = 258
+hour = 4
+minute = 1
+
+[[hint]]
+# Shift span 7
+position = 50093884 # 213 13:50  213:13:50 -  0.00
+day = 259
+hour = 15
+minute = 57
+
+[[hint]]
+# Shift span 8
+#position = 50250498 # 268 16:20  268:16:20 -  0.00
+position = 50375687 # 262 16:38  268:16:38 -  0.01 false
+day = 259
+
+[[hint]]
+# Shift span 9
+position = 281580346 # 291 19:20  291:19:20 -  0.00
+day = 285
+time_questionable = true

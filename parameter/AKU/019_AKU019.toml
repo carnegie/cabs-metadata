@@ -1,0 +1,84 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 19
+station_code = "AKU"
+reel_number = 19
+
+[tape.epoch]
+start_year = 1976
+start_month = 11
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "AKU/019_AKU019_NG_20190325.tpc5"
+
+[[hint]]
+# Shift span 0
+position = 61613 # 310 17:55  310:17:55 -  0.00 
+day = 311
+
+[[hint]]
+# Shift span 1
+position = 52411932 # 315 22:30  315:22:30 -  0.00
+day = 316
+
+[[hint]]
+# Shift span 2
+position = 253666645 #335 22:20  335:22:20 -  0.00
+day = 336
+
+[[hint]]
+# Shift span 3
+position = 342794055 #344 19:00  344:99:00 +  0.00
+day = 345
+
+[[hint]]
+# Shift span 4
+position = 420100628 # 352 11:20  352:11:20 -  0.00
+day = 353
+
+[[hint]]
+# Shift span 5
+position = 431060981 # 353 13:35  353:13:35 -  0.00
+day = 354
+
+[[hint]]
+# Shift span 6
+position = 560418400 # 366 09:50  000:09:50 -  0.00
+day = 367
+
+[[hint]]
+# Shift span 7
+position = 560584214 # 366 10:35  000:10:35 -  0.00
+day = 367
+
+[[hint]]
+# Keep span 8 - timing seems okay
+position = 625875949 # 008 22:20  007:22:20 -  0.00
+time_questionable = true
+
+[[hint]]
+# Keep span 9 - timing seems okay
+position = 626048138 # 007 22:50  007:22:50 -  0.00
+time_questionable = true
+
+[[hint]]
+# Keep span 10 - timing seems okay
+position = 660215593 # 011 08:20  011:08:20 -  0.00
+time_questionable = true 
+
+[[hint]]
+# Discard span 11 - ~ 8 mins, cannot confirm timing
+position = 663389840 # 011 16:10  011:16:10 +  0.00
+discard = true
+
+[[hint]]
+# Keep span 12 - timing seems okay
+position = 663502527 # 011 16:30  011:16:30 -  0.00
+time_questionable = true

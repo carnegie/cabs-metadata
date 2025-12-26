@@ -1,0 +1,26 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 487
+station_code = "MAT"
+reel_number = 19
+
+[tape.epoch]
+start_year = 1971 # 1971-01-25--1971-04-10
+start_month = 1
+time_zone_offset = 0
+
+[tape.clock.generation_1]
+signal_polarity_inverted = true
+two_seconds_per_pulse = false
+extra_hour_mark = false
+discriminator_cpm = 13
+discriminator_extra_bins = 2
+discriminator_threshold = 0.001
+minute_mark_style = "one_second_mark"
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "MAT/487_MAT019_NG_20250221.tpc5"
+

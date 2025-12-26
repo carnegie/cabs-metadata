@@ -1,0 +1,206 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 55
+station_code = "AKU"
+reel_number = 55
+
+[tape.epoch]
+start_year = 1985
+start_month = 2
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "AKU/055_AKU055_NG_20190730.tpc5"
+
+[[hint]]
+#position = 100732113 # start span 2
+position = 100648441 # 063 09:20  212:01:20 -  0.00 false
+day = 63 #  212 01:32  212:01:32 -
+hour = 15
+minute = 50
+
+[[hint]]
+# Shift span 3
+position = 110721859  #064 15:50  064:15:50 +  7.54 false
+minute = 55
+
+[[hint]]
+# Discard span 3 (now) - ~6 mins, very very noisy
+position = 311622761 # 084 16:22  ---:--:-- -  0.00 false
+discard = true
+
+[[hint]]
+# Keep span 4 for now
+position = 372125553 # 090 18:16  090:12:16 -  0.00 false
+time_questionable = true
+
+[[hint]]
+# Kepp span 5 for now
+position = 519470381 # 105 10:20  ---:--:-- -  0.00 false
+time_questionable = true
+
+[[hint]]
+# Discard span 7 (now) - ~ 25 mins, very very noisy
+position = 528060116 # 212 02:30  212:02:30 + 11.03 false
+discard = true
+#day = 106
+#hour = 6 
+
+[[hint]]
+# Discard span 8 - ~ 42 mins, very very noisy
+position = 528333393 # 211 02:40  211:02:40 +  9.35 false
+discard = true
+#day = 108
+
+[[hint]]
+# Discard span 9 - ~ 13 mins, very very noisy
+position = 539335869 # 212 01:13  ---:--:-- +  9.34 false
+discard = true
+#day = 109
+#hour = 10
+
+[[hint]]
+# Discard span 10 - ~ 9 mins, very very noisy
+position = 539571875 # 233 05:18  23b:05:0b -  0.00 false
+discard = true
+#day = 109
+#hour = 11
+
+[[hint]]
+# Discard span 11 - ~ 1.5 hrs, very very noisy
+position = 541536664 # 212 10:20  212:10:20 -  0.00 false
+discard = true
+#day = 109
+#hour = 15
+#minute = 15
+
+[[hint]]
+# Shift span 13
+position = 570087783 # 120 11:45  ---:--:-- ? false
+day = 112
+time_questionable = true
+
+[[hint]]
+# Discard span 14
+position = 570720293 # 365 12:00  100:12:00 -  0.01 false 
+discard = true
+
+[[hint]]
+# Discard span 15
+position = 572519201 # 120 17:35  ---:--:-- ? false 
+discard = true
+
+[[hint]]
+# Discard span 17 - ~ 9 mins, very very noisy
+position = 576961672 # 121 05:19  +++:++:++ + 12.59 false
+discard = true
+
+[[hint]]
+# Discard span 18 - ~2.75 hrs, very very noisy
+position = 579023241 # 121 09:12  121:09:12 +  8.57 false 
+discard = true
+
+[[hint]]
+# Shift span 20
+position = 588551248 # 122 08:05  122:08:05 +  9.07 false 
+day = 114
+time_questionable = true
+
+[[hint]]
+# Discard span 21 - ~ 6 mins, very very noisy
+position = 591939844 # 122 16:33  +++:++:++ + 11.14 false
+discard = true
+
+[[hint]]
+# Discard span 22 - ~ 13 mins, very very noisy
+position = 596176214 # 123 02:23  1a3:02:a4 -  0.00 false 
+discard = true
+
+[[hint]]
+# Dicsard span 23 - ~ 13 mins, very very noisy
+position = 596509495 # 123 23:55  ---:--:-- +  9.15 false
+discard = true
+
+[[hint]]
+# Shift span 24
+position = 596683150 # 123 03:36  123:03:36 -  0.00 false
+day = 115
+time_questionable = true
+
+[[hint]]
+# Discard span 25 - ~ 15 mins, very very noisy
+position = 606548440 # 124 07:56  124:03:17 -  0.01 false 
+discard = true
+
+[[hint]]
+# Discard span 26 - ~ 3.5 hrs, very very noisy
+position = 606937497 # 124 04:13  324:04:13 + 13.10 false
+discard = true
+
+[[hint]]
+# Discard span 28 - ~ 7.75 hrs, very very noisy
+position = 611820028 # 124 15:56  124:15:52 -  0.01 false 
+discard = true
+
+[[hint]]
+# Discard span 30 - ~ 1.75 hrs, very very noisy
+position = 614306026 # 124 21:54  124:21:54 -  0.00 false 
+discard = true
+
+[[hint]]
+# Discard span 31 - ~ 9 mins, very very noisy
+position = 615847281 # 125 01:18  +++:++:++ -  0.01 false
+discard = true
+
+[[hint]]
+# Shift span 32
+position = 616166866 # 125 02:22  125:02:22 -  0.00 false
+day = 117
+time_questionable = true
+
+[[hint]]
+# Discard span 33 - ~ 15 mins, very very noisy
+position = 644995938 # 185 20:54  +++:++:++ -  0.01 false
+discard = true
+
+[[hint]]
+# Discard span 34 - ~ 16 mins, very very noisy
+position = 645502806 # 128 00:47  020:00:47 + 12.72 false
+discard = true
+
+[[hint]]
+# Discard span 35 - ~ 15 mins, very very noisy
+position = 646196820 # 128 00:16  128:02:6f -  0.01 false
+discard = true
+
+[[hint]]
+# Discard span 36 - ~ 7 mins, very very noisy
+position = 646349407 # 128 02:49  120:02:49 -  0.01 false 
+discard = true
+
+[[hint]]
+# Discard span 37 - ~ 8 mins, very very noisy
+position = 647445766 # 138 23:58  +++:++:++ -  0.00 false
+discard = true
+
+[[hint]]
+# Shift span 38
+position = 650615339 # 128 13:04  128:13:04 +  0.00
+day = 120
+time_questionable = true
+
+[[hint]]
+# Discard span 39 - ~7 mins, very very noisy
+position = 692820366 # 182 19:05  182:bd:05 -  0.00
+discard = true
+
+[[hint]]
+# Discard span 40 - ~ 7 mins, very very noisy
+position = 694188890 # 192 21:42  +++:++:++ -  0.00 
+discard = true

@@ -1,0 +1,28 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 177
+station_code = "CUZ"
+reel_number = 34
+
+[tape.epoch]
+start_year = 1973
+start_month = 4
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+#[tape.clock.generation_1]
+#signal_polarity_inverted = true
+#two_seconds_per_pulse = false
+#extra_hour_mark = false
+#discriminator_cpm = 288
+#discriminator_extra_bins = 5
+#discriminator_threshold = 0.0015
+#minute_mark_style = "one_second_mark"
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "CUZ/177_CUZ034_NG_20200717.tpc5"

@@ -1,0 +1,35 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 74
+station_code = "AKU"
+reel_number = 74
+
+[tape.epoch]
+start_year = 1989 # 1989-06-11 -- 1989-08-21
+start_month = 6
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = true
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "AKU/074_AKU074_NG_20241031.tpc5"
+
+[[hint]]
+# Keep span 0 for now
+position = 159088 # 162 15:25  162:15:25 -  0.00
+time_questionable = true
+
+[[hint]]
+# Keep span 2 for now
+position = 422458056 # 205 01:18  205:01:18 -  0.00
+time_questionable = true
+
+[[hint]]
+# Keep span 4 for now
+position = 591846807 # 222 01:30  222:01:30 -  0.00
+time_questionable = true
+

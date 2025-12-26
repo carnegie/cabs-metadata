@@ -1,0 +1,43 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 405
+station_code = "KMU"
+reel_number = 65
+
+[tape.epoch]
+start_year = 1981 # 1981-02-05--?
+start_month = 2
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "KMU/405_KMU065_NG_20250407.tpc5"
+
+[[hint]]
+# Discard span 182 - ~13 mins, no reasonable TS
+position = 133591982
+discard = true
+
+[[hint]]
+# Discard span 3 - ~13 mins, only 1 timestamp
+position = 24635850
+discard = true
+
+[[hint]]
+# discard span 8 - ~25 mins, noisy, no events, maybe revisit
+position = 63815500
+discard = true #day = 44 - shift span 8 to fit within previous span (ts not reasonable)
+
+#[[hint]] 
+# 
+# keeping original timestamps because the times were fine
+# and shifting aligns with 2 events but not others
+# 
+# Shift span 4 based on EQ arrival picks on 02-09-1981
+#position = 24741350
+#minute = 9

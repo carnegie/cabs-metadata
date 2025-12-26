@@ -1,0 +1,36 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 104
+station_code = "AKU"
+reel_number = 104
+
+[tape.epoch]
+start_year = 1995 # 1995-10-31--1995-12-06
+start_month = 9 # FIXME
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "AKU/104_AKU104_NG_20230105.tpc5"
+
+[[hint]]
+position = 308724479 # span 1
+day = 299
+hour = 1
+
+[[hint]]
+position = 309112238 # span 2
+day = 299
+hour = 2
+prune = 33
+
+[[hint]]
+position = 315020577 # span 3
+day = 299
+prune = 2
+

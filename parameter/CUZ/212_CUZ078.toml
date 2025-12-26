@@ -1,0 +1,114 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 212
+station_code = "CUZ"
+reel_number = 78
+
+[tape.epoch]
+start_year = 1983
+start_month = 5
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "CUZ/212_CUZ078_NG_20171106.tpc5"
+
+[[hint]]
+position = 3206007 # start span 0
+day = 133
+
+#[[hint]]
+#position = 115401835 # span 2
+#day = 145
+#
+#[[hint]]
+#position = 115712765 # span 3
+#day = 145
+
+[[hint]]
+position = 116064203 # span 4
+day = 145
+
+#[[hint]]
+#position = 316320596 # span 36
+#day = 164 #  245 EXPERIMENTAL
+
+[[hint]]
+# span 4
+position = 315867435 # 164 22:40  245:22:40 -  0.00
+day = 165
+
+[[hint]]
+# Discard span 6 - ~ 2.5 hrs, very noisy, bad ts, cannot confirm timing
+position = 639147176 # 199 01:16  219:01:16 -  0.00
+discard = true
+
+[[hint]]
+# Discard span 8 - ~ 1.25 hrs, bad ts, cannot confirm timing
+position = 641435402 # 199 06:55  219:06:55 -  0.00
+discard = true
+
+[[hint]]
+# Discard span 10 - ~ 2.75 hrs, bad ts, cannot confirm timing
+position = 642075113 # 199 08:30  219:08:30 -  0.00
+discard = true
+
+[[hint]]
+# Discard span 13 - ~ 40 mins, bad ts, cannot confirm timing
+position = 644495481 # 199 14:30  219:14:30 -  0.00
+discard = true
+
+[[hint]]
+# Discard span 15 - ~ 18 mins, bad ts, cannot confirm timing
+position = 645032595 # 199 15:50  219:15:50 -  0.00
+discard = true
+
+[[hint]]
+# Discard span 17 - ~ 2.75 hrs, bad ts, cannot confirm timing
+position = 645300996  #199 16:30  219:16:30 -  0.00
+discard = true
+
+[[hint]]
+# Discard span 19 - ~ 1.75 hrs, bad ts, cannot confirm timing
+position = 646507256 # 199 19:30  219:19:30 -  0.00
+discard = true
+
+[[hint]]
+# Shift span 21
+position = 647444595 # 198 21:50  219:21:50 -  0.00
+day = 199
+
+######
+#[[hint]]
+#position = 639194510
+#day = 199  # 219
+#[[hint]]
+#position = 641590370
+#day = 199
+#[[hint]]
+#position = 642122218 
+#day = 199
+#[[hint]]
+#position = 644562685
+#day = 199
+#[[hint]]
+#position = 645039315
+#day = 199
+#[[hint]]
+#position = 645374717
+#day = 199
+#[[hint]]
+#position = 645763475
+#day = 199
+#[[hint]]
+#position = 646513918
+#day = 199
+#[[hint]]
+#position = 647444595
+#day = 198
+

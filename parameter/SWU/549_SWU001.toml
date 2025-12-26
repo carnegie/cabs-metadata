@@ -1,0 +1,83 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 549
+station_code = "SWU"
+reel_number = 1
+
+[tape.epoch]
+start_year = 1984
+start_month = 10
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "SWU/549_SWU001_NG_20200127.tpc5"
+
+[[hint]]
+# Shift span 0
+position = 5868030 # 293 08:59  293:08:59 -  0.00
+day = 284
+
+[[hint]]
+# Shift span 1
+position = 92397466 # 302 10:40  302:10:40 -  0.00
+day = 297
+hour = 1
+
+[[hint]]
+# Shift span 2
+position = 94183035 # 302 15:27  297:15:27 -  0.00
+day = 297
+hour = 6
+
+[[hint]]
+# Discard span 3 - ~6 mins, cannot confirm
+position = 94284679 # 297 16:16  297:16:16 -  0.00
+discard = true
+
+
+[[hint]]
+# Discard span 4 - ~ 41 mins, cannot confirm, noisy
+position = 94554353 # 297 17:15  297:17:15 +  9.39 false
+discard = true
+#hour = 8
+#minute = 0
+
+[[hint]]
+# Shift span 5
+position = 94858950 # 297 17:55  297:17:55 -  0.00 false
+hour = 8
+minute = 45
+
+[[hint]]
+# Shift span 6
+position = 95046627 # 297 18:18  297:18:18 -  0.00 false
+minute = 10
+
+[[hint]]
+# Shift span 7
+position = 102354609 # 298 12:40  298:12:43 -  0.00
+hour = 3 
+minute = 35
+
+[[hint]]
+# Shift span 7
+position = 111957711 # 299 13:00  29b:5b:03 + 15.56 false
+hour = 4
+
+[[hint]]
+# Shift span 8
+position = 113235819 # 299 15:59  299:15:59 -  0.02 false
+hour = 6
+minute = 59
+
+[[hint]]
+# Shift span 9
+position = 113703559 # 299 17:18  299:08:18 -  0.02 false
+hour = 8
+

@@ -1,0 +1,30 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 421
+station_code = "KMU"
+reel_number = 81
+
+[tape.epoch]
+start_year = 1985 # 1985-07-05 -- 1985-10-02
+start_month = 7
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = true
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "KMU/421_KMU081_NG_20241126.tpc5"
+
+[[hint]]
+# Discard span 3 - ~ 11.5 hrs, very noisy, cannot confirm
+position = 518236624 # 251 02:34  251:02:34 -  0.00 
+discard = true
+
+[[hint]]
+# Discard span 4 - ~ 10 mins, cannot confirm
+position = 724330236 # 272 17:09  272:17:09 +  0.00 
+discard = true
+

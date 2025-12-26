@@ -1,0 +1,45 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 376
+station_code = "KMU"
+reel_number = 35
+
+[tape.epoch]
+start_year = 1974
+start_month = 7
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "KMU/376_KMU035_NG_20190822.tpc5"
+
+[[hint]]
+# Discard span 4 - ~20 mins, noisy
+position = 119731603
+discard = true
+
+[[hint]]
+# Discard span 5 - ~8 mins, bit noisy, event present, maybe revisit?
+position = 119879643
+discard = true
+
+[[hint]]
+# Discard span 6 - ~7 mins, noisy
+position = 119943257
+discard = true
+
+[[hint]]
+# Discard span 12 - ~2.5 hrs, very very noisy
+position = 303666119
+discard = true
+#[[hint]]
+# Span 12
+# correct to tape timestamp
+#position = 210808127
+#hour = 14
+#minute = 8

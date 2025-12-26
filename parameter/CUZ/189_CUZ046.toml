@@ -1,0 +1,32 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 189
+station_code = "CUZ"
+reel_number = 46
+
+[tape.epoch]
+start_year = 1975
+start_month = 11
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "CUZ/189_CUZ046_NG_20170727.tpc5"
+
+[[hint]]
+# span #137 very short (9 minutes) with only a single time stamp,
+# which is inconsistent with surrounding spans -> discard
+position = 595164123 # 001 23:58  ---:--:-- +  0.00
+discard = true
+
+[[hint]]
+# Discard span 138 - ~31 mins, cannot confirm.
+position = 595316496 # 002 19:34  002:19:34 -  0.00 false
+discard = true
+
+

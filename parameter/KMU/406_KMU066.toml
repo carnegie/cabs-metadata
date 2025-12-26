@@ -1,0 +1,29 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 406
+station_code = "KMU"
+reel_number = 66
+
+[tape.epoch]
+start_year = 1981
+start_month = 10
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = true
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "KMU/406_KMU066_NG_20191122.tpc5"
+
+[[hint]]
+# Discard span 1 - ~10 mins, Good Timestamps, Data contains spikes, maybe revisit
+position = 6364800
+discard = true
+
+[[hint]]
+# Discard span 2 - ~1 hr, ok timestamps, contains large spikes, maybe revisit
+position = 6451500
+discard = true

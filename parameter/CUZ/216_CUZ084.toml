@@ -1,0 +1,68 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 216
+station_code = "CUZ"
+reel_number = 84
+
+[tape.epoch]
+start_year = 1985
+start_month = 3
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "CUZ/216_CUZ084_NG_20171113.tpc5"
+
+[[hint]]
+# Shift span 0
+position = 534817 # 062 18:45  164:18:46 -  0.00
+day =  64
+minute = 46
+
+[[hint]]
+# Shift span 1
+position = 61102717 # 070 23:30  288:11:00 +  0.00
+day = 70
+hour = 23
+minute = 11
+
+
+[[hint]]
+#position = 97364754 # start span 2
+#position = 97194750 # 075 15:42  292:15:42 -  0.00
+position = 97201562 # 073 15:43  292:15:43 -  0.00
+day = 74 
+#day = 75  # span 1,2 seem linked
+
+[[hint]]
+# Shift span 3
+#position = 111932056 # 075 10:19  888:10:19 -  0.00
+#position = 117647673 # 076 00:20  889:00:20 +  0.00
+position = 111938834 # 076 03:46  888:10:20 -  0.00
+day = 76
+hour = 3
+minute = 49
+
+[[hint]]
+# Shift span 4
+position = 126662242 # 080 15:55  890:15:55 +  0.00
+day = 77
+
+[[hint]]
+# Discard span 6 - ~ 1.5 hrs, bad timestamps, cannot confirm timing
+position = 167705936 # 365 20:37  894:20:37 -  0.00
+discard = true
+
+[[hint]]
+# Discard span 8 - ~ 1.5 hrs, bad timestamps, cannot confirm timing
+position = 168466702 # 365 22:29  894:22:29 -  0.00
+discard = true
+
+#[[hint]]
+#position = 167189560 # start span 5
+#day = 84 # spans 4,5 seem linked

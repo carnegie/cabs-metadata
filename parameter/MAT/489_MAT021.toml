@@ -1,0 +1,40 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 489 
+station_code = "MAT"
+reel_number = 21
+
+[tape.epoch]
+start_year = 1971 # 1971-06-27--1971-09-09
+start_month = 6
+time_zone_offset = 0
+
+[tape.clock.generation_1]
+signal_polarity_inverted = true
+two_seconds_per_pulse = false
+extra_hour_mark = false
+discriminator_cpm = 420
+discriminator_extra_bins = 15
+marker_cycles_per_second = 7
+minute_mark_style = "one_second_mark"
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "MAT/489_MAT021_NG_20250226.tpc5"
+
+[[hint]]
+position = 763114 # near start of span 1
+day = 178 # 6/27
+hour = 1
+
+[[hint]]
+position = 543794773 # near start of span 2
+day = 232
+hour = 21
+
+[[hint]]
+position = 553445285 # near start of span 3
+day = 233
+hour = 20

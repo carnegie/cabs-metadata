@@ -1,0 +1,27 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 101 
+station_code = "AKU"
+reel_number = 101
+
+[tape.epoch]
+start_year = 1995 # 1995-02-05--1995-04-19
+start_month = 2
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "AKU/101_AKU101_NG_20250422.tpc5"
+
+[[hint]]
+position = 564323663 # start span 3
+day = 92 #  033 20:55  033:21:15 +
+
+[[hint]]
+position = 576880492 # start span 4
+day = 94 # 093 16:58  093:16:58 -

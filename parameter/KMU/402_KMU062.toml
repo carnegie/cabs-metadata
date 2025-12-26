@@ -1,0 +1,54 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 402
+station_code = "KMU"
+reel_number = 62
+
+[tape.epoch]
+start_year = 1980 # 1980-03-16--1980-05-15
+start_month = 3
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "KMU/402_KMU062_NG_20191115.tpc5"
+
+[[hint]]
+# Discard span 2 - ~ 17.5 hrs, cannot confirm timing, shoudl revisit, salvagable
+position = 648566043 # 143 01:55  143:01:55 -  0.00
+discard = true
+
+[[hint]]
+# Discard Span 3 - Span length ~7 mins
+position = 657398400
+discard = true
+
+[[hint]]
+# Discard span 4 - ~ 14.75 hrs, very noisy
+position = 671615479 # 145 11:01  145:11:01 -  0.00
+discard = true
+
+[[hint]]
+# Discard span 5 - ~ 28 hrs, very noisy
+position = 678652473 # 146 04:23  146:04:23 -  0.00
+discard = true
+
+[[hint]]
+# Discard span 9 - ~1 hr, cannot confirm timing
+position = 703267651 # 148 17:02  148:17:02 -  0.00
+discard = true
+
+[[hint]]
+# Discard span 10 - ~ 8 mins, bad timestamps
+position = 704426231 # 366 10:40 000:90:60
+discard = true
+
+[[hint]]
+# Discard span 12 - ~7.5 hrs, noisy
+position = 713291035 # 149 17:49  149:17:49 -  0.00
+discard = true

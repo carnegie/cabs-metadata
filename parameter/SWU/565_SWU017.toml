@@ -1,0 +1,26 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 565
+station_code = "SWU"
+reel_number = 17
+
+[tape.epoch]
+start_year = 1988
+start_month = 12
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "SWU/565_SWU017_NG_20200309.tpc5"
+
+[[hint]]
+# Leap year into none leap year jump correction
+position = 90279470 # 001 00:10  003:00:12 +  0.00
+#position = 90234050 # 001 00:05  003:00:05 +  0.00
+day = 367 #2
+minute = 15

@@ -1,0 +1,41 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 396
+station_code = "KMU"
+reel_number = 56
+
+[tape.epoch]
+start_year = 1978
+start_month = 11
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "KMU/396_KMU056_NG_20190919.tpc5"
+
+[[hint]]
+# Discard span 2 - No valid timestamps & waveform is noisy/bad
+# span length ~4 hrs long  - no reasonable way to correct the time 
+# neighboring spans are also not good
+position = 261451000
+discard = true
+
+[[hint]]
+# Discard span 3 - No valid timestamps & span length ~23mins
+position = 262939700
+discard = true
+
+[[hint]]
+# Discard span 5 - No valid timestamps & span length ~12 mins
+position = 263178600
+discard = true
+
+[[hint]]
+# Discard span 6 - No valid timestamps & span lengrh ~41 mins
+position = 263275850
+discard = true

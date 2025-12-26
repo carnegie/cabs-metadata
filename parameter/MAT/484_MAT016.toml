@@ -1,0 +1,41 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 484
+station_code = "MAT"
+reel_number = 16
+
+[tape.epoch]
+start_year = 1970 # 1970-06-15--1970-08-28
+start_month = 6
+time_zone_offset = 0
+
+[tape.clock.generation_1]
+signal_polarity_inverted = true
+two_seconds_per_pulse = false
+extra_hour_mark = false
+discriminator_cpm = 420
+discriminator_extra_bins = 15
+marker_cycles_per_second = 7
+minute_mark_style = "one_second_mark"
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "MAT/484_MAT016_NG_20250127.tpc5"
+
+[[hint]]
+position = 4926016 # span 0
+day = 166
+
+[[hint]]
+position = 13176842 # span 1
+day = 167
+
+[[hint]]
+position = 31849714 # span 2
+day = 169
+
+[[hint]]
+position = 43031241 # span 3
+day = 170

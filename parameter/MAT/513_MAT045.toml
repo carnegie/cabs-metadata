@@ -1,0 +1,39 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 513
+station_code = "MAT"
+reel_number = 45
+
+[tape.epoch]
+start_year = 1976
+start_month = 5
+time_zone_offset = 9  # JST
+
+[tape.clock.generation_2]
+signal_polarity_inverted = true
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "MAT/513_MAT045_NG_20181001.tpc5"
+
+[[hint]]
+# Shift span 1 by 48 mins to fit with EQ picks
+position = 236851480 # 166 12:48  002:00:48 -  0.00
+day = 166
+hour = 12
+minute = 0
+
+[[hint]]
+# Shift span 2 by 9 hours to correspond with calibration test times
+position = 274141131 # 170 15:27  170:15:27 -  0.00
+hour = 6
+
+[[hint]]
+# Shift span 3 by 10 hours to correspond with calibration test times
+position = 673717953 # 211 00:35  102:00:35 +  0.00
+day = 210
+hour = 14
+minute = 38 
+

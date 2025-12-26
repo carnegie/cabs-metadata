@@ -1,0 +1,85 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 10
+station_code = "AKU"
+reel_number = 10
+
+[tape.epoch]
+start_year = 1974 # 1974-06-27--1974-09-09
+start_month = 6
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "AKU/010_AKU010_NG_20250110.tpc5"
+
+[[hint]]
+# Shift span 1 to fit with service sheets
+position = 30580405 # 101 22:09  181:22:09 +  0.00
+day = 181
+
+[[hint]]
+# Discard span 13 - ~ 11 mins, very very noisy
+position = 62624561 # 185 09:56  185:09:56 -  0.00 false
+discard = true
+
+[[hint]]
+# Discard span 14 - ~ 29 mins, very very noisy
+position = 63097750 # 185 11:11  185:11:11 +  9.62 false
+discard = true
+
+[[hint]]
+# Discard span 15 - ~ 14 mins, very very noisy
+position = 63721057 # 185 12:50  185:12:50 -  0.00 false
+discard = true
+
+[[hint]]
+# Discard span 16 - ~ 8 mins, very very noisy
+position = 64280748 # 185 14:19  185:14:19 -  0.00 false
+discard = true
+
+[[hint]]
+# Discard span 19 - ~ 20 mins, very very noisy
+position = 67081337 # 185 21:43  185:21:46 -  0.00 false
+discard = true
+
+[[hint]]
+# Discard span 23 - ~ 12 mins, very very noisy
+position = 72325133 # 186 11:34  208:40:02 -  0.01 false
+discard = true
+
+[[hint]]
+# Discard span 25 - ~ 2.5 hrs, very very noisy
+position = 73738860 # 186 15:19  186:15:19 -  0.00 false
+discard = true
+
+[[hint]]
+# Discard span 26 - ~ 29 mins, very very noisy
+position = 75218755 # 186 19:15  186:19:15 +  9.12 false
+discard = true
+
+[[hint]]
+# Discard span 32 - ~ 12 mins, very very noisy
+position = 83623617 # 187 17:30  187:17:10 -  0.00 false
+discard = true
+
+[[hint]]
+# Discard span 34 - ~ 13 mins, very very noisy
+position = 87612562 # 188 03:59  0a2:03:59 -  0.01 false
+discard = true
+
+[[hint]]
+# Discard span 35 - ~ 53 mins, very very noisy
+position = 87943220 # 188 04:51  ---:--:-- ? false 
+discard = true
+
+[[hint]]
+# Shift span 45
+position = 635034882 # 270 13:10  270:13:10 +  0.00
+day = 243
+hour = 10

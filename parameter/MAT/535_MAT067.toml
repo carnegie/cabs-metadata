@@ -1,0 +1,19 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 535
+station_code = "MAT"
+reel_number = 67
+
+[tape.epoch]
+start_year = 1981 # 1981-05-16--1981-08-02 
+start_month = 5
+time_zone_offset = 9  # JST
+
+[tape.clock.generation_2]
+signal_polarity_inverted = true
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "MAT/535_MAT067_NG_20250403.tpc5"

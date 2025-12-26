@@ -1,0 +1,63 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 443
+station_code = "KMU"
+reel_number = 103
+
+[tape.epoch]
+start_year = 1990 # 1990-10-02--1991-01-04
+start_month = 10
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = true
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "KMU/443_KMU103_NG_20250430.tpc5"
+
+[[hint]]
+# Discard span 5 - ~5 hrs, bad timestamps, cannot confirm timing, revisit?
+position = 607646250
+discard = true
+
+#[[hint]]
+#position = 609895110 # span 4
+#day = 337 # 022 09:22  932:09:22 -
+
+[[hint]]
+position = 620725718 # span 6
+day = 338 # 023 12:43  933:12:43 -
+minute = 34
+
+[[hint]]
+position = 635464254 # span 8
+day = 340 # 262 01:54  935:01:54 -
+
+[[hint]]
+position = 637227770 # span 10
+day = 340 # 262 06:21  935:06:21 -
+
+[[hint]]
+# Discard span 12 - ~16.5 hrs, cannot confirm timing, maybe revisit
+position = 637683750 #637683350 # span 12
+#day = 344 #340 # 001 07:35  935:07:35 -
+discard = true
+
+#[[hint]]
+#position = 639843085 # span 14
+#day = 340 # 020 12:57  935:12:57 -
+
+[[hint]]
+# Discard span 15 - ~60 hrs, cannot confirm timing, should revisit
+# Needs to be shifted but unclear by how much
+position = 644772600 # span 15
+#day = 358 # 024 01:23  936:01:23
+discard = true
+
+[[hint]]
+position = 668447002 # span 16
+#day = 362 # 361 02:40 362:02:40
+ 

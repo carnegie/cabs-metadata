@@ -1,0 +1,82 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 401
+station_code = "KMU"
+reel_number = 61
+
+[tape.epoch]
+start_year = 1979 # 1979-12-19--1980-03-16
+start_month = 12
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "KMU/401_KMU061_NG_20250407.tpc5"
+
+[[hint]]
+position = 174861549
+hour = 9 #  020 00:19  020:09:59 -
+
+[[hint]]
+# Shift span 42
+position = 375538294 # 041 03:20  041:03:20 -  0.00 false
+minute = 17
+
+[[hint]]
+# Shift span 66
+position = 577334898  #062 06:25  062:06:25 -  0.00
+hour = 3
+minute = 9
+
+[[hint]]
+# shift span 67
+position = 596808725 # 064 06:15  064:06:15 +  0.00
+hour = 3
+minute = 0
+
+[[hint]]
+# Shift span 70
+position = 608519573 # 065 16:45  065:16:45 -  0.01 false
+minute = 24
+
+[[hint]]
+# Shift span 78
+position = 675284936  #072 05:34  072:05:34 -  0.00 false
+day = 436 #71 
+
+[[hint]]
+# Shift span 79
+position = 678777179  #072 14:19  072:14:19 -  0.00 false
+day = 436 #71
+
+[[hint]]
+# Shift span 80
+position = 682376381 # 072 23:19  072:23:19 -  0.00 false
+day = 436 #71
+hour = 22
+minute = 13
+
+[[hint]]
+# Shift span 81
+position = 684191533 # 073 03:51  073:03:51 -  0.00 false
+day = 437 #72
+
+[[hint]]
+# Shift span 82
+position = 685990208 # 073 08:20  073:08:20 -  0.00 false
+day = 437 #72
+
+[[hint]]
+# Shift span 83
+position = 702040590 # 075 00:05  075:00:05 +  3.24 false
+day = 438 #73
+
+[[hint]]
+# Shift span 84
+position = 702951813 # 075 02:20  075:02:20 -  0.00
+day = 438 #74

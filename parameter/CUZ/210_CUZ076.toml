@@ -1,0 +1,26 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 210
+station_code = "CUZ"
+reel_number = 76
+
+[tape.epoch]
+start_year = 1982
+start_month = 12
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "CUZ/210_CUZ076_NG_20170814.tpc5"
+
+[[hint]]
+position = 1080834
+day = 349
+
+#position = 722603535 # near end of span dates make sense
+#day = 323

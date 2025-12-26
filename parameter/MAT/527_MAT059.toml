@@ -1,0 +1,26 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 527
+station_code = "MAT"
+reel_number = 59
+
+[tape.epoch]
+start_year = 1979
+start_month = 7
+time_zone_offset = 9  # JST
+
+[tape.clock.generation_2]
+signal_polarity_inverted = true
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "MAT/527_MAT059_NG_20181108.tpc5"
+
+
+[[hint]]
+# Shift span 1 
+position = 81707657 # 206 00:30  006:00:30 -  0.00
+day = 206
+minute = 28

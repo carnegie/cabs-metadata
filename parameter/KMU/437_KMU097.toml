@@ -1,0 +1,24 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 437
+station_code = "KMU"
+reel_number = 97
+
+[tape.epoch]
+start_year = 1989 # 1989-06-12 - ?
+start_month = 6
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = true
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "KMU/437_KMU097_NG_20241120.tpc5"
+
+[[hint]]
+# Discard span 0 - ~ 9 mins, cannot confirm
+position = 84601 # 163 05:47  163:05:47 -  0.00
+discard = true

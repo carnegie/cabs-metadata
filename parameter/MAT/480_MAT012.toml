@@ -1,0 +1,46 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 480
+station_code = "MAT"
+reel_number = 12
+
+[tape.epoch]
+start_year = 1970 # PQL 1969 # 1969-08-30--1969-11-10
+start_month = 8
+time_zone_offset = 0
+
+[tape.clock.generation_1]
+signal_polarity_inverted = true
+two_seconds_per_pulse = false
+extra_hour_mark = false
+discriminator_cpm = 11
+discriminator_extra_bins = 1
+discriminator_threshold = 0.05
+minute_mark_style = "one_second_mark"
+# NEW
+discriminator_minutes = 14
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "MAT/480_MAT012_NG_20250228.tpc5"
+
+[[hint]]
+position = 1589109
+day = 242 # 1969-08-30 #  --- --:28-  ---:--:-- -
+#hour = 8 # experimental
+
+
+[[hint]]
+position = 153508231
+day = 260 #radnom
+#hour = 0 #random  --- --:24-  ---:--:-- -
+
+[[hint]]
+position = 280996435
+day = 260 #  --- 03:10-  ---:--:-- + 
+
+[[hint]]
+position = 365391844
+day = 268 #  --- 10:30-  ---:--:-- -

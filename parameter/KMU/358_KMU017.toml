@@ -1,0 +1,30 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 358
+station_code = "KMU"
+reel_number = 17
+
+[tape.epoch]
+start_year = 1970 # 1970-11-04--1971-01-15
+start_month = 11
+time_zone_offset = 0
+
+[tape.clock.generation_1]
+signal_polarity_inverted = true
+two_seconds_per_pulse = false
+extra_hour_mark = true         # hour marks seem to (sometimes) last for two minutes
+discriminator_cpm = 14         # between 13 and 14 cpm, a bit closer to 14
+discriminator_extra_bins = 1
+marker_cycles_per_second = 8   # between 7Hz and 8Hz, perhaps closer to 8
+discriminator_minutes = 14     # consistently only minutes 0..13 have discriminator signal
+minute_mark_style = "one_second_mark"
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "KMU/358_KMU017_NG_20250219.tpc5"
+
+[[hint]]
+position = 778093
+day = 308

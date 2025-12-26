@@ -1,0 +1,24 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 574
+station_code = "SWU"
+reel_number = 26
+
+[tape.epoch]
+start_year = 1990 # 1990-11-08--1990-12-19
+start_month = 9
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "SWU/574_SWU026_NG_20250428.tpc5"
+
+[[hint]]
+# Discard span 5 - ~ 6 mins, short
+position = 67634071 # 312 05:50  ---:--:-- -  0.00
+discard = true

@@ -1,0 +1,25 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 424
+station_code = "KMU"
+reel_number = 84
+
+[tape.epoch]
+start_year = 1986 # 1986-04-01 -- 1986-06-22
+start_month = 4
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = true
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "KMU/424_KMU084_NG_20241203.tpc5"
+
+[[hint]]
+# Discard span 14 - length is 13 mins & timestamps not very reliable
+position = 668997750
+discard = true
+

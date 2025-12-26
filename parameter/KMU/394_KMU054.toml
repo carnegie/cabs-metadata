@@ -1,0 +1,145 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 394
+station_code = "KMU"
+reel_number = 54
+
+[tape.epoch]
+start_year = 1978
+start_month = 6
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "KMU/394_KMU054_NG_20190920.tpc5"
+
+[[hint]]
+# Discard span 1 - bad timestamps, should revisit
+position = 460423108 # 209 18:29  209:18:29 -  0.01 false
+discard = true
+
+[[hint]]
+# Discard span 4 
+position = 537102647  #216 21:18  216:21:18 -  0.00
+discard = true
+
+[[hint]]
+# Discard span 5
+position = 546532262 # 217 17:20  217:17:20 -  0.00 
+discard = true
+
+[[hint]]
+# Discard span 6
+position = 547268018 # 217 18:36  217:18:0c -  0.00
+discard = true
+
+[[hint]]
+# Discard span 7
+position = 551050006 # 218 02:20  218:02:20 -  0.00
+discard = true
+
+[[hint]]
+# Discard span 8
+position = 552770648 # 218 05:59  218:05:59 -  0.00
+discard = true
+
+[[hint]]
+# Discard span 9 - ~6 mins, noisy
+position = 553404550
+discard = true
+
+[[hint]]
+# Discard span 10
+position = 553799047 # 218 08:01  218:08:01 +  0.00 
+discard = true
+
+[[hint]]
+# Discard span 11
+position = 554509203 # 218 09:19  218:09:19 -  0.00
+discard = true
+
+[[hint]]
+# Discard span 12 - ~9 mins, noisy
+position = 559233100
+discard = true
+
+[[hint]]
+# Discard span 13
+position = 560147372 # 218 18:58  218:18:58 -  0.00 
+discard = true
+
+[[hint]]
+# Discard span 14
+position = 561136126 # 218 21:05  218:21:05 +  0.00 
+discard = true
+
+[[hint]]
+# Discard span 15 - ~2 hrs, very noisy, maybe revisit
+position = 562780800
+discard = true
+
+[[hint]]
+# Discard span 16 - ~1.5 hrs, very noisy, maybe revisit
+position = 563908500
+discard = true
+
+[[hint]]
+# Discard span 17
+position = 564625295 # 219 04:30  ---:--:-- -  0.00
+discard = true
+
+[[hint]]
+# Discard span 18
+position = 566763714 # 219 08:59  219:08:59 -  0.00
+discard = true
+
+[[hint]]
+# Discard span 19 - ~1.75 hrs, very noisy, maybe revisit
+position = 568477350
+discard = true
+
+[[hint]]
+# Discard span 20 - ~17 mins, noisy
+position = 569340100
+discard = true
+
+[[hint]]
+# Discard span 21
+position =  569763364 # 219 15:17  219:15:17 -  0.00
+discard = true
+
+[[hint]]
+# Discard span 22
+position = 569987520 # 219 15:44  219:15:46 -  0.00
+discard = true
+
+[[hint]]
+# Discard span 23
+position = 572630789 # 219 21:30  219:21:30 -  0.00
+discard = true
+
+[[hint]]
+# Discard span 24
+position  = 572997786  #219 22:12  219:22:12 +  0.00
+discard = true
+
+[[hint]]
+# Discard span 25
+position = 573276451 # 219 22:40  219:22:40 -  0.00
+discard = true
+
+[[hint]]
+# Discard span 26
+position = 573429310 # 219 22:57  219:22:57 -  0.00
+discard = true
+
+[[hint]]
+# Discard span 27
+position = 573985845 # 219 23:55  219:23:55 -  0.00
+discard = true
+

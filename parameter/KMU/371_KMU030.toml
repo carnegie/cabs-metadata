@@ -1,0 +1,24 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 371
+station_code = "KMU"
+reel_number = 30
+
+[tape.epoch]
+start_year = 1973 # 1973-07-14--1973-09-25
+start_month = 7
+time_zone_offset = 0
+
+[tape.clock.generation_1]
+signal_polarity_inverted = false
+two_seconds_per_pulse = false
+extra_hour_mark = false
+discriminator_cpm = 288
+discriminator_extra_bins = 5
+minute_mark_style = "one_second_mark"
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "KMU/371_KMU030_NG_20250117.tpc5"

@@ -1,0 +1,29 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 220
+station_code = "CUZ"
+reel_number = 88
+
+[tape.epoch]
+start_year = 1986
+start_month = 2
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "CUZ/220_CUZ088_NG_20171121.tpc5"
+
+[[hint]]
+# Discard span 1 - ~22 hrs, very very noisy, cannot confirm timing, maybe revisit
+position = 163360381 # 058 17:57  058:17:57 -  0.00
+discard = true
+
+[[hint]]
+# Discard span 2 - ~41.5 hrs, very very noisy, cannot confirm timing, maybe revisit
+position = 176597807 # 060 02:49  060:02:49 -  0.00
+discard = true

@@ -1,0 +1,35 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 566
+station_code = "SWU"
+reel_number = 18
+
+[tape.epoch]
+start_year = 1989
+start_month = 3
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "SWU/566_SWU018_NG_20200312.tpc5"
+
+[[hint]]
+# Discard span 0 - ~ 30 mins, noisy
+position = 273925 # 076 05:59  076:05:59 -  0.00
+discard = true
+
+[[hint]]
+# Discard span 1 - ~ 12 mins, very very noisy
+positon = 580371 # 076 06:40  076:06:40 -  0.00
+discard = true
+
+[[hint]]
+# Discard span 2 - ~ 27 mins, very very noisy
+position = 1702327 # 076 07:30  076:07:30 -  0.00
+discard = true
+

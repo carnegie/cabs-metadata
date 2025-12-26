@@ -1,0 +1,24 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 399
+station_code = "KMU"
+reel_number = 59
+
+[tape.epoch]
+start_year = 1979
+start_month = 6
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "KMU/399_KMU059_NG_20191107.tpc5"
+
+[[hint]]
+# discard span 2 - ~24 mins long + inconsistent timestamps
+position = 130104670 # 177 21:48  177:20:38 -  0.00
+discard = true

@@ -1,0 +1,25 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 553
+station_code = "SWU"
+reel_number = 5
+
+[tape.epoch]
+start_year = 1985
+start_month = 11
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "SWU/553_SWU005_NG_20200220.tpc5"
+
+[[hint]] # span 11
+position = 222417120
+hour = 14
+
+# TODO span 12 overlaps...

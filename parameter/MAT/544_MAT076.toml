@@ -1,0 +1,34 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 544
+station_code = "MAT"
+reel_number = 76
+
+[tape.epoch]
+start_year = 1983
+start_month = 4
+time_zone_offset = 9  # JST
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "MAT/544_MAT076_NG_20181210.tpc5"
+
+[[hint]]
+# Discard span 2 - ~10.75 hrs, very very noisy, cannot confirm timing
+position = 394987916 # 153 04:54  153:04:54 -  0.00
+discard = true
+
+[[hint]]
+# Discard span 3 - ~12.5 hrs, very very noisy, cannot confirm timing
+position = 424890540 # 155 23:27  155:23:27 -  0.00
+discard = true
+
+[[hint]]
+# Discard span 31 - ~ 10.5 hrs, very noisy, cannot confirm timing
+position = 456547878 # 158 21:52  159:21:52 -  0.00
+discard = true

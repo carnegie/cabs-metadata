@@ -1,0 +1,44 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 374
+station_code = "KMU"
+reel_number = 33
+
+[tape.epoch]
+start_year = 1974
+start_month = 2
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "KMU/374_KMU033_NG_20190819.tpc5"
+
+[[hint]]
+# Discard span 2 - ~1.5 hrs, very noisy, bad TS
+position = 131541680
+discard = true
+
+[[hint]]
+# shift span 4 - ~ 7.75 hrs, inaccurate TS, cannot confirm timing, revisit? 
+position = 196257163
+discard = true
+
+[[hint]]
+# Discard span 7 - ~11 mins, short, cannot confirm
+position = 535395422
+discard = true
+
+[[hint]]
+# Discard span 8 - ~2.5 hrs, periodic noise, cannot confirm, maybe revisit?
+position = 575682302
+discard = true
+
+[[hint]]
+# Discard span 9 - ~6 mins, short, cannot confirm
+position = 586303920
+discard = true

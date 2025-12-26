@@ -1,0 +1,67 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 18
+station_code = "AKU"
+reel_number = 18
+
+[tape.epoch]
+start_year = 1976
+start_month = 8
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "AKU/018_AKU018_NG_20190325.tpc5"
+
+[[hint]]
+# Shift span 0 to fit service sheet
+position = 185354 # 236 20:25  214:20:25 -  0.00
+day = 214
+
+[[hint]]
+# Shift span 1 
+position = 87675799 # 245 13:10  245:13:10 + 15.02 false
+day = 223
+time_questionable = true
+
+[[hint]]
+# Shift span 2
+position = 113917533 # 248 04:57  248:04:57 -  0.01 false 
+day = 226
+time_questionable = true
+
+[[hint]] # Span 3
+position = 368726755 # 277 23:50  254:23:50 -  0.01 false
+day = 255
+
+[[hint]]
+# Shift span 5
+position = 369427492 # 255 01:30  255:01:30 -  0.00 false
+day = 256
+
+[[hint]] # span 7
+position = 379534613 # 275 01:35  256:01:35 -  0.00
+day = 257 #275
+
+[[hint]] # span 9
+position = 399570443 # 277 01:20  258:01:20 -  0.00
+day = 259 # 281
+
+
+[[hint]]
+# shift span 11 - Discard: Cannot confirm timing - revisit
+position = 419780869 # 260 01:30  260:01:30 -  0.01 false
+discard = true
+#day = 261 #283
+#time_questionable = true
+
+[[hint]] # span 13 - Discard: Cannot confirm timing- revisit 
+position = 429774784 # 280 01:20  261:01:20 -  0.00
+dicard = true
+#time_questionable = true
+#day = 262

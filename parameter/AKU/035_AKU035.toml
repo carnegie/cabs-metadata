@@ -1,0 +1,65 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 35
+station_code = "AKU"
+reel_number = 35
+
+[tape.epoch]
+start_year = 1980
+start_month = 10
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "AKU/035_AKU035_NG_20190412.tpc5"
+
+[[hint]] # Span 0
+position = 40740000
+day = 297
+
+[[hint]] # Span 1
+position = 48751217 # 298 10:20  260:10:20 -  0.00
+day = 298
+hour = 11
+minute = 50
+
+[[hint]] # Span 2
+position = 123972646 # 304 21:59  220:21:59 -  0.00
+day = 305
+
+[[hint]] # span 3
+position = 131139966 # 306 04:10  653:04:10 +  0.00
+day = 306
+hour = 14
+minute = 58
+
+[[hint]] # span 7
+position = 566743300 # 349 22:37  153:22:37 -  0.00
+day = 349
+hour = 14 #15
+minute = 57
+
+[[hint]] # Span 8
+position = 597514548 # 352 15:50  159:15:50 +  0.00
+day = 352
+
+
+[[hint]]
+# Discard span 9 - ~ 26 mins
+position = 699186540 # 363 16:35  363:16:35 -  0.00
+discard = true
+
+[[hint]] 
+# Discard span 10 - ~ 1 hr
+position = 699366893 # 363 17:02  363:17:02 +  0.00
+discard = true
+
+[[hint]]
+# Shift back span 11
+position = 699986815 #  363 18:30  363:18:30 -  0.00
+day = 362

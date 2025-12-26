@@ -1,0 +1,25 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 395
+station_code = "KMU"
+reel_number = 55
+
+[tape.epoch]
+start_year = 1978
+start_month = 8
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "KMU/395_KMU055_NG_20190919.tpc5"
+
+[[hint]]
+# Discard span 0 - no good timestamps and inconsistent with next span whose time is verified
+# span 0 only ~25 mins long
+position = 100000
+discard = true

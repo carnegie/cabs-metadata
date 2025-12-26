@@ -1,0 +1,26 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 476
+station_code = "MAT"
+reel_number = 8
+
+[tape.epoch]
+start_year = 1968 # 1968-11-19--1969-01-29
+start_month = 11
+time_zone_offset = 0
+
+[tape.clock.generation_1]
+signal_polarity_inverted = true
+two_seconds_per_pulse = false
+extra_hour_mark = false
+discriminator_cpm = 13
+discriminator_extra_bins = 2
+discriminator_threshold = 0.001
+minute_mark_style = "one_second_mark"
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "MAT/476_MAT008_NG_20250303.tpc5"
+

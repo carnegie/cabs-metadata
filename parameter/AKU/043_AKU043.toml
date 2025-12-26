@@ -1,0 +1,57 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 43
+station_code = "AKU"
+reel_number = 43
+
+[tape.epoch]
+start_year = 1982
+start_month = 6
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "AKU/043_AKU043_NG_20190711.tpc5"
+
+
+
+[[hint]] # span 1, start
+position = 178902502 # 323 21:05  31d:21:05 +
+day = 193
+hour = 10 # speculative
+time_questionable = true
+
+[[hint]]
+# Discard span 2 - ~ 8 mins, cannot confirm, bad ts
+position = 181446643 # 324 15:56  324:15:56 -  0.00
+discard = true
+
+[[hint]] # span 3, end
+position = 188758905 # 195 10:20 
+day = 194
+hour = 9
+time_questionable = true
+
+[[hint]] # span 4, end
+position = 675725089
+#day = 211
+#prune = 5 # for continuity with following span
+
+[[hint]] # span 5, end
+position = 685279366 # 243 16:55  133:20:55 -  0.00
+day = 243
+hour = 16 # for continuity with following span
+minute = 59 
+
+[[hint]] # span 6
+#position = 712086472
+position = 711826760 # 215 08:00  246:07:54 -  0.00
+day = 246 #  215
+#prune = 2
+#position = 685409079 # 212 17:20  212:17:20 -  0.00
+#day = 243

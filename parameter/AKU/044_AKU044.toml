@@ -1,0 +1,76 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 44
+station_code = "AKU"
+reel_number = 44
+
+[tape.epoch]
+start_year = 1982
+start_month = 9
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "AKU/044_AKU044_NG_20190712.tpc5"
+
+[[hint]] # span 0
+# Discard span 0 - ~ 40 mins, noisy, bad ts
+position = 322563
+discard = true
+#day = 247
+
+[[hint]] # span 1 - Fit EQ better and service sheet new tape time
+position = 483320 # 247 01:09  660:01:09 +  0.00
+day = 247 #  365
+hour = 17
+minute = 15
+
+#[[hint]] # span 8
+#position = 231373733
+#day = 271 #  270
+
+[[hint]]
+# Shift span 10
+position = 272108612 # 272 16:35  250:16:35 +  0.00
+day = 274
+
+[[hint]]
+# Shift span 10
+position  = 399077754 # 285 06:56  285:06:55 -  0.00
+day = 287
+ 
+#[[hint]]
+# Discard span 11 - ~3 hrs, cannot confirm timing
+#position = 399077754 # 285 06:56  285:06:55 -  0.00
+#day = 287
+#discard = true
+
+## TEST 
+
+[[hint]]
+# Shift span 13
+position = 503972178 # 298 01:10  266:01:10 +  0.00
+#position = 503793958 # 298 00:44  266:00:44 -  0.00
+day = 298
+minute = 35
+
+#[[hint]] # span 12
+#position = 485489457 # 296 01:26  296:01:26 -  0.00
+#prune = 24 # uncertain
+#day = 267
+
+#[[hint]]
+# Shift span 14
+#position = 507191015 # 298 09:40  298:09:40 -  0.00
+#day = 299
+
+##
+
+[[hint]] # span 15
+position = 507047856
+day = 298

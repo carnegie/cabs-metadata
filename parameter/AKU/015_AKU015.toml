@@ -1,0 +1,39 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 15
+station_code = "AKU"
+reel_number = 15
+
+[tape.epoch]
+start_year = 1975
+start_month = 5
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "AKU/015_AKU015_NG_20190318.tpc5"
+
+[[hint]]
+# Discard span 0 - ~ 35 hrs, very noisy, cannot confirm timing
+position = 104438 # 220 17:35  220:17:35 -  0.00
+discard = true
+
+[[hint]]
+# Discard span 1 - ~ 6 mins, cannot confirm timing
+position = 14618933 # 230 15:07  230:15:07 +  0.00
+discard = true
+
+[[hint]]
+# Discard span 3 - ~ 3.5 hrs, cannot confirm timing
+position = 155685247 # 347 18:24  347:18:24 -  0.00
+discard = true
+
+[[hint]]
+# Discard span 4 - ~ 45 mins, cannot confirm timing
+position = 157265274 # 347 22:09  347:22:09 +  0.00
+discard = true

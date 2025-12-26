@@ -1,0 +1,23 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 427
+station_code = "KMU"
+reel_number = 87
+
+[tape.epoch]
+start_year = 1986 # 1986-12-01 -- 1987-03-01
+start_month = 12
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = true
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "KMU/427_KMU087_NG_20241118.tpc5"
+
+[[hint]]
+position = 280381614 # span 4
+day = 364

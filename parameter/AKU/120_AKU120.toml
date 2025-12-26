@@ -1,0 +1,30 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 120
+station_code = "AKU"
+reel_number = 120
+
+[tape.epoch]
+start_year = 1999 # 1999-05-01--1999-07-12
+start_month = 5
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "AKU/120_AKU120_NG_20230228.tpc5"
+
+
+[[hint]]
+position = 339930323 # span 2
+prune = 9 # uncertain, spans 3,4 may need to be pushed back instead
+
+[[hint]]
+position = 340462021 # span 4
+day = 155
+hour = 10 # uncertain, see above
+

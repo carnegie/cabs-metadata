@@ -1,0 +1,40 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 521
+station_code = "MAT"
+reel_number = 53
+
+[tape.epoch]
+start_year = 1978
+start_month = 3
+time_zone_offset = 9  # JST
+
+[tape.clock.generation_2]
+signal_polarity_inverted = true
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "MAT/521_MAT053_NG_20181029.tpc5"
+
+[[hint]]
+# Discard span 1 - ~55 hrs, cannot confirm timing, should revisit, potentially salvagable
+position = 518896984 # 115 21:30  115:21:18 -  0.00 
+discard = true
+
+[[hint]] # span 2
+# Discard span 2 - ~ 2hrs, cannot confirm timing
+position = 541823670 # 118 04:25  251:10:25 -  0.00
+discard = true
+#day = 118
+#hour = 4
+#pune = 5
+
+[[hint]] # span 3
+# Discard span 3 - ~2 hrs, cannot confirm timing
+position = 542706215 # 118 06:27  151:10:27 -  0.00 
+discard = true
+#day = 118 # yes
+#hour = 7
+

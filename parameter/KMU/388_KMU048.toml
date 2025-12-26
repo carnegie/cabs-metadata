@@ -1,0 +1,65 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 388
+station_code = "KMU"
+reel_number = 48
+
+[tape.epoch]
+start_year = 1977
+start_month = 3
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "KMU/388_KMU048_NG_20190906.tpc5"
+
+[[hint]]
+# Discard span 5 - ~16 hrs, cannot confirm timing, maybe revisit
+position = 437158647 # 129 20:41 129:20:41
+discard = true
+
+[[hint]]
+# Discard span 6 - ~1.5 hrs, cannot confirm timing, maybe revisit
+position = 444402661
+discard = true
+
+[[hint]]
+# Shift span 7 - ~22.5 hrs, cannot confirm timing, should revisit 
+position = 445268468 # 130 15:27 130:15:27 
+discard = true
+
+[[hint]]
+# Discard span 8 - ~7 mins, bad TS
+position = 455182644
+discard = true
+
+[[hint]]
+# Discard span 9 - ~4.5 hrs, cannot confirm timing, maybe revist
+position = 455325522
+discard = true
+
+[[hint]]
+# Discard span 10 - ~7 mins, bad TS
+position = 457286894
+discard = true
+
+[[hint]]
+# Discard span 11 - ~4 hrs, cannot confirm timing, maybe revisit
+position = 457675762
+discard = true
+
+[[hint]]
+# Discard span 12 - ~6 hrs, cannot confirm timing, maybe revisit
+position = 459974418
+discard = true
+
+[[hint]]
+# Discard span 13 - ~1 hr, cannot confirm timing
+position = 463118426
+discard = true
+

@@ -1,0 +1,32 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 42
+station_code = "AKU"
+reel_number = 42
+
+[tape.epoch]
+start_year = 1982
+start_month = 4
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "AKU/042_AKU042_NG_20190711.tpc5"
+
+
+[[hint]]
+# Discard span 2 - ~ 53 mins, bad ts, noisy, cannot confirm timing
+position = 20069146 # span 2, near end
+discard = true
+#day = 105
+#hour = 14
+
+[[hint]]
+# Discard span 4 - ~59 mins, very noisy
+position = 241819126 # 127 09:12  127:09:12 +  0.00 
+discard = true

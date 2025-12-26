@@ -1,0 +1,20 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 131
+station_code = "AKU"
+reel_number = 131
+
+[tape.epoch]
+start_year = 2001 # 2001-06-15--2001-08-25
+start_month = 6
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "AKU/131_AKU131_NG_20230711.tpc5"
+

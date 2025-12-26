@@ -1,0 +1,25 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 219
+station_code = "CUZ"
+reel_number = 87
+
+[tape.epoch]
+start_year = 1985
+start_month = 11
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "CUZ/219_CUZ087_NG_20171117.tpc5"
+
+[[hint]]
+position = 228182108
+hour = 5
+minute = 57 #  339 00:27  339:05:57 -
+

@@ -1,0 +1,101 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 522
+station_code = "MAT"
+reel_number = 54
+
+[tape.epoch]
+start_year = 1978
+start_month = 5
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = true
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "MAT/522_MAT054_NG_20181029.tpc5"
+
+[[hint]]
+position = 207906231
+day = 167
+hour = 5
+
+#[[hint]]
+#position = 218218187
+#day = 168
+
+[[hint]]
+# Discard span 3 - ~2 hrs, noisy, cannot confirm timing
+position = 218170378 # 168 11:25  152:11:25 -  0.00
+discard = true
+
+[[hint]]
+# Discard span 4 - ~ 1.5 hrs, cannot confirm timing
+position = 219051559 # 168 06:21  152:14:21 -  0.00 
+discard = true
+
+[[hint]]
+# Discard span 5 - ~ 9 mins, cannot confirm timing
+position = 219738998 # 152 20:27  152:20:27 -  0.00
+discard = true
+
+[[hint]]
+# Shift span 8 by 13 hrs 42 mins
+position = 393072014 # 186 13:52  151:04:52 -  0.00
+day = 186
+hour = 0
+minute = 10
+
+[[hint]]
+# Discard span 13 - ~ 8 mins, cannot confirm timing, noisy
+position = 455112136 # 151 10:15  151:10:15 +  0.00
+discard = true
+
+[[hint]]
+# Discard span 15 - ~ 34 mins, cannot confirm timing, noisy
+position = 455749711 # 192 10:24  151:10:24 -  0.00
+discard  = true
+
+[[hint]] 
+# Shift span 16  by 9 hrs 1 min
+position = 458352034 # 193 00:10  193:00:10 +  0.00
+hour = 9
+minute = 11
+
+[[hint]]
+# Discard span 17 - ~ 2.5 hrs, cannot confirm timing
+position = 478892060 # 195 02:15  195:02:15 +  0.00
+discard = true
+
+[[hint]]
+# Discard span 18 - ~ 14.5 hrs, cannot confirm timing, bad ts, maybe revisit
+position = 479930417 # 195 05:24  151:10:24 -  0.00
+discard = true
+
+[[hint]]
+# Discard span 21 - ~21.5 hrs, noisy, cannot confirm timing
+position = 711817916 # 218 08:21  218:08:21 -  0.00
+discard = true
+
+
+#[[hint]] # span 8
+#position = 391237000
+#day = 186
+#hour = 9
+
+[[hint]] # span 6
+position = 219921660
+day = 168
+hour = 10
+
+#[[hint]]
+#position = 455818081
+#day = 192
+
+#[[hint]] # span 19
+#position = 480043362
+#day = 195
+#hour = 5

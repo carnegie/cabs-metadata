@@ -1,0 +1,27 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 469
+station_code = "MAT"
+reel_number = 1
+
+[tape.epoch]
+start_year = 1967 # 1967-07-15--1967-09-17 
+start_month = 7
+time_zone_offset = 0
+
+[tape.clock.generation_1]
+signal_polarity_inverted = true
+two_seconds_per_pulse = false
+extra_hour_mark = false
+discriminator_cpm = 13
+discriminator_extra_bins = 2
+discriminator_threshold = 0.001
+minute_mark_style = "one_second_mark"
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "MAT/469_MAT001_NG_20250306_part2.tpc5"
+# TODO 469_MAT001_NG_20250306_part1.tpc5
+

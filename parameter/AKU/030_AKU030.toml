@@ -1,0 +1,27 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 30
+station_code = "AKU"
+reel_number = 30
+
+[tape.epoch]
+start_year = 1979
+start_month = 8
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "AKU/030_AKU030_NG_20190408.tpc5"
+
+[[hint]]
+position = 481585358
+day = 274 #  054
+
+[[hint]]
+position = 493583504
+day = 282 #  341

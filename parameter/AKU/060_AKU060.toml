@@ -1,0 +1,83 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 60
+station_code = "AKU"
+reel_number = 60
+
+[tape.epoch]
+start_year = 1986
+start_month = 4
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "AKU/060_AKU060_NG_20190808.tpc5"
+
+
+[[hint]]
+# Discard span 1 - ~ 9 mins, very very noisy
+position = 130623267 # 118 15:39  118:15:39 -  0.00 false
+discard = true
+
+[[hint]] # span 4
+position = 221078763
+day = 127 #  123 16:30  123:16:30 +
+
+[[hint]]
+# Discard span 6 - ~9 mins, very noisy, bad ts
+position = 248803221 # 212 01:18  212:01:18 -  0.00
+discard = true
+
+[[hint]]
+# Span 7
+position = 248965717  #130 11:30  222:01:30 -  0.00 false
+day = 130 #  222 ??
+hour = 11
+minute = 25
+
+[[hint]]
+# Span 8
+position = 250419504
+day = 130 #  222 14:53  126:14:52 +
+
+[[hint]]
+# Discard Span 9 - ~ 55 mins, very very noisy
+position = 711893112 # 185 12:47  185:12:47 -  0.00 false
+discard = true
+
+[[hint]]
+# Discard span 10 - ~ 1.75 hrs, very very noisy
+position = 712376130 # 186 16:22  186:16:22 -  0.00 false
+discard = true
+
+[[hint]]
+# Keep span 11 for now
+position = 713272089 # 186 18:34  186:18:34 -  0.00 false
+time_questionable = true
+
+[[hint]]
+# Discard span 12 - ~2 hours, very very noisy, bad ts
+position = 715571606 # 187 00:09  187:00:09 +  8.20 false
+discard = true
+
+[[hint]]
+# Keep span 13 for now
+position = 716559078 # 187 15:50  187:15:50 -  0.00 false
+time_questionable = true
+
+[[hint]]
+# Discard span 14 - ~ 23 mins, very very noisy, mostly bad ts
+position = 721878097 # 188 04:40  188:04:40 -  0.00 false
+discard = true
+
+[[hint]]
+# Discard span 15 - ~ 46 mins, very very noisy
+position = 722399680 # 188 18:38  188:18:38 -  0.00 false
+discard = true
+
+

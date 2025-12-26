@@ -1,0 +1,20 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 77 
+station_code = "AKU"
+reel_number = 77
+
+[tape.epoch]
+start_year = 1990 # 1990-01-19--?
+start_month = 1
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = true
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "AKU/077_AKU077_NG_20250421.tpc5"
+

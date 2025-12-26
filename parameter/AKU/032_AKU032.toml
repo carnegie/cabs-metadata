@@ -1,0 +1,39 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 32
+station_code = "AKU"
+reel_number = 32
+
+[tape.epoch]
+start_year = 1980
+start_month = 3
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "AKU/032_AKU032_NG_20190411.tpc5"
+
+[[hint]]
+# Discard span 0 - ~ 18.75 hrs, very noisy, cannot confirm timing
+position = 78479 # 077 00:45  077:00:45 +  0.00
+discard = true
+
+[[hint]]
+# Discard span 1 - ~ 45 mins, noisy, cannot confirm timing
+position = 8039270 # 077 19:35  077:19:35 -  0.00
+discard = true 
+
+[[hint]]
+# Shift span 3 - correspond with calibration test
+position = 544570612 # 139 19:41  139:19:41 -  0.00
+day = 130
+
+[[hint]]
+# Shift span 4 - fit with span 3
+position = 664947922 # 151 17:15  151:17:15 +  0.00
+day = 142

@@ -1,0 +1,24 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 543
+station_code = "MAT"
+reel_number = 75
+
+[tape.epoch]
+start_year = 1983
+start_month = 2
+time_zone_offset = 9  # JST
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "MAT/543_MAT075_NG_20190701.tpc5"
+
+[[hint]]
+# Discard span 2 - ~2 hrs, bad TS
+position = 486911708 # 039 22:25  ---:--:-- -  0.00
+discard = true

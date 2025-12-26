@@ -1,0 +1,39 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 481
+station_code = "MAT"
+reel_number = 13
+
+[tape.epoch]
+start_year = 1969 # 1969-11-10--1970-01-21
+start_month = 11
+time_zone_offset = 0
+
+[tape.clock.generation_1]
+signal_polarity_inverted = true
+two_seconds_per_pulse = false
+extra_hour_mark = false
+discriminator_cpm = 13
+discriminator_extra_bins = 2
+discriminator_threshold = 0.001
+minute_mark_style = "one_second_mark"
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "MAT/481_MAT013_NG_20250228.tpc5"
+
+[[hint]]
+position = 1895511
+day = 314
+cycle = "PM"
+
+[[hint]]
+position = 102495409
+day = 324
+
+[[hint]]
+position = 439461219
+day = 357
+hour = 15 # TODO cycle not working?!

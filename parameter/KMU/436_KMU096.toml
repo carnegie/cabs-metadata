@@ -1,0 +1,24 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 436
+station_code = "KMU"
+reel_number = 96
+
+[tape.epoch]
+start_year = 1989 # 1989-03-26 -- 1989-06-12
+start_month = 3
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = true
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "KMU/436_KMU096_NG_20241204.tpc5"
+
+[[hint]]
+# Discard span 2 - ~ 29 mins, very noisy
+position = 3259739 # 085 07:38  085:07:38 -  0.00 
+discard = true

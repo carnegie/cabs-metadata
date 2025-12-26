@@ -1,0 +1,23 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 68
+station_code = "AKU"
+reel_number = 68
+
+[tape.epoch]
+start_year = 1988
+start_month = 3
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = true
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "AKU/068_AKU068_NG_20241017.tpc5"
+
+[[hint]]
+position = 582788938
+day = 141

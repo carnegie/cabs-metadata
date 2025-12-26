@@ -1,0 +1,60 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 204
+station_code = "CUZ"
+reel_number = 70
+
+[tape.epoch]
+start_year = 1981
+start_month = 6
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "CUZ/204_CUZ070_NG_20170810.tpc5"
+
+[[hint]]
+# Discard span 0 - ~ 19 hrs, noisy, cannot confirm timing
+position = 334446 # 157 19:45  137:19:45 -  0.00
+discard = true
+#day = 157
+
+[[hint]]
+# Discard span 3 - ~ 13.5 hrs, very noisy, cannot confirm timing
+position = 130203235 # 171 07:41  111:07:41 -  0.00
+discard = true
+#day = 171
+
+
+[[hint]]
+position = 135870838 # start span 4
+day = 171
+
+[[hint]]
+position = 224285715 # start span 7
+day = 180 # experimental, could be later
+
+[[hint]]
+position = 414477664 # start span 8
+day = 200 # span 8 definitely linked to span 7
+
+[[hint]]
+# Discard span 9 - ~ 14.25 hrs, noisy, cannot confirm timing
+position = 544432589 # 214 22:45  253:22:45 -  0.00
+discard = true
+#day = 214 # likely follows span 8
+
+[[hint]]
+# Shift span 10
+position = 656294363 # 268 11:50  268:11:50 -  0.00
+day = 228
+
+[[hint]]
+# Shift span 13
+position = 676056415 # 250 15:52  250:15:52 -  0.00
+day = 230

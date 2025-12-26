@@ -1,0 +1,74 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 375
+station_code = "KMU"
+reel_number = 34
+
+[tape.epoch]
+start_year = 1974
+start_month = 5
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "KMU/375_KMU034_NG_20190819.tpc5"
+
+[[hint]]
+# Discard span 6 - ~16 mins, not great timestamps
+position = 138268791  #134 23:28  134:23:28
+discard = true
+
+[[hint]]
+# Shift span 8 by 17 mins
+position = 149558600 # ~ 136 04:42 136:04:42
+minute = 25
+
+[[hint]]
+# Shift span 19 by 1 day - corresponds with calibration test date (6-17)
+position = 422955824 # 164 20:59
+day = 163
+ 
+[[hint]]
+# Shift span 21 by 18 mins 
+position = 476189530 # ~ 169: 07:56 169:07:56
+minute = 38
+
+[[hint]]
+# Shift span 24 forward by 1 hr - fit within spans
+position = 491151602 # 170 23:16  170:23:16 -  0.00
+hour = 22
+
+[[hint]]
+# Shift span 27 forwards by 6 mins
+position = 514445129 # 173 07:41  173:07:41 -  0.00
+minute = 35
+
+[[hint]]
+# Discard span 27 (now) - ~40 mins, cannot confirm timestamps
+position = 550850644 # 176 23:43  176:23:43 -  0.00
+discard = true
+
+[[hint]]
+# Shift span 29 back 1 min - fit within spans
+position = 569360994 # 178 20:30  178:20:30 -  0.00
+minute = 29
+
+[[hint]]
+# Shift span 31 back by 1 min 
+position = 580997341 # 180 00:23  180:00:23 +  0.00
+minute = 22
+
+#[[hint]]
+# Shift span 34 by 2 mins
+#position = 641659570 # 186 02:12 186:02:12
+#minute = 10
+
+#[[hint]]
+# Shift span 39 to be consistent with previous span and decoding
+#position = 689433294 # 191 00:23 191:00:23
+#minute = 59

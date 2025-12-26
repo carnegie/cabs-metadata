@@ -1,0 +1,25 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 440
+station_code = "KMU"
+reel_number = 100
+
+[tape.epoch]
+start_year = 1990 # 1990-02-01-?
+start_month = 2
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = true
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "KMU/440_KMU100_NG_20250428.tpc5"
+
+#[[hint]]
+# Test - calibration test was off by 1 day based on service sheet notes
+# Try shifting span 4 by 1 day to see if its wrong
+#position = 126695269  # 061 03:36  061:03:36 -  0.00
+#day = 62

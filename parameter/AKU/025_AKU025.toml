@@ -1,0 +1,54 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 25
+station_code = "AKU"
+reel_number = 25
+
+[tape.epoch]
+start_year = 1978
+start_month = 5
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "AKU/025_AKU025_NG_20190401.tpc5"
+
+
+[[hint]] # span 1
+position = 106103054
+discard = true # short (6 minute) span with obviously incorrect timing
+
+
+[[hint]] # span 2
+position = 106191494 # 150 06:26  177:13:26 -  0.00
+day = 150
+time_questionable = true
+
+[[hint]]
+# shift span 3
+position = 111048501 # 150 17:20  150:17:20 -  0.00
+day = 151
+time_questionable = true
+
+[[hint]] # span 4
+# Discard span 4 - ~ 27 mins, bad ts, cannot confirm timing
+position = 152426764 # near end
+discard = true
+
+[[hint]] # span 5
+# Shift span 5 to keep within tape timestamps
+position = 152760907 # 159 15:16  130:17:04 +  0.00
+day = 159
+hour = 17
+
+[[hint]]
+# Shift span 6
+position = 273875547 # 172 03:10  312:03:10 +  0.00
+day = 172
+hour = 17 #16
+minute = 40

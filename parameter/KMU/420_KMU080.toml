@@ -1,0 +1,44 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 420
+station_code = "KMU"
+reel_number = 80
+
+[tape.epoch]
+start_year = 1985 # 1985-03-23 -- 1985-07-05
+start_month = 3
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = true
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "KMU/420_KMU080_NG_20241007.tpc5"
+
+[[hint]]
+# discard span 1 - ~3.5 hrs, very very noisy, maybe revisit
+position = 251188550
+discard = true
+
+[[hint]]
+# discard span 2 - ~4.5 hrs, very very noisy, maybe revisit
+position = 254654400
+discard = true
+
+[[hint]]
+# Discard span 4 - ~ 41 mins, noisy, cannot confirm
+position = 363427349 # 122 06:14  122:06:14 +  0.00
+discard = true
+
+[[hint]]
+# Discard span 5 - ~ 42 mins, noisy, cannot confirm
+position = 363778017 # 143 23:29  143:23:29 -  0.00 
+discard = true
+
+[[hint]]
+# Discard span 6 - ~ 45 mins, noisy, cannot confirm
+position = 364556272 # 144 09:21  144:09:21 -  0.00 
+discard = true

@@ -1,0 +1,77 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 500
+station_code = "MAT"
+reel_number = 32
+
+[tape.epoch]
+start_year = 1973
+start_month = 9
+time_zone_offset = 0
+
+[tape.clock.generation_1]
+signal_polarity_inverted = true
+two_seconds_per_pulse = false
+extra_hour_mark = false
+discriminator_cpm = 420 
+discriminator_extra_bins = 15 
+marker_cycles_per_second = 7
+minute_mark_style = "one_second_mark"
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "MAT/500_MAT032_NG_20201001.tpc5"
+
+[[hint]]
+position = 205050 # start span 0
+day = 271
+minute = 31
+
+[[hint]]
+position = 11395250 # span 0
+day = 272
+minute = 29
+
+[[hint]]
+position = 147589025 # span 1
+day = 285
+hour = 19 
+minute = 7
+
+[[hint]]
+position = 205676929 # span 1
+day = 291
+hour = 15
+minute = 14 
+
+[[hint]]
+position = 233818766 # span 1
+day = 294
+hour = 11
+minute = 9
+
+[[hint]]
+position = 285133701 # span 1
+day = 299 
+hour = 15
+minute = 8
+ 
+[[hint]]
+position = 458473901 # span 1
+day = 317
+hour = 1
+minute = 8 #9
+
+[[hint]]
+position = 493650892 # span 1
+day = 320
+hour = 13
+minute = 52 #53
+
+[[hint]]
+position = 661116412 # span 2
+day = 337
+hour = 10 
+minute = 5 #7

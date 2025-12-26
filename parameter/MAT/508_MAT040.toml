@@ -1,0 +1,31 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 508
+station_code = "MAT"
+reel_number = 40
+
+[tape.epoch]
+start_year = 1975
+start_month = 5
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = true
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "MAT/508_MAT040_NG_20180924.tpc5"
+
+
+[[hint]]
+# Discard span ~ 6 mins, bad timing
+position = 715105706 # span 2
+discard = true
+
+[[hint]]
+# Discard span 4 - ~12.25 hrs, not good timestamps, cannot confirm timing, maybe revisit
+position = 715340667 
+discard = true
+#day = 205

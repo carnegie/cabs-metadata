@@ -1,0 +1,20 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 122
+station_code = "AKU"
+reel_number = 122
+
+[tape.epoch]
+start_year = 1999 # 1999-09-22--1999-12-03
+start_month = 9
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "AKU/122_AKU122_NG_20230328.tpc5"
+

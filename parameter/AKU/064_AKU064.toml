@@ -1,0 +1,38 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 64
+station_code = "AKU"
+reel_number = 64
+
+[tape.epoch]
+start_year = 1987
+start_month = 4
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "AKU/064_AKU064_NG_20190812.tpc5"
+
+[[hint]]
+position = 39363000 # beginning of span 1
+minute = 2
+
+[[hint]]
+# Discard span 3 - ~ 27 mins, very very noisy
+position = 269787178 # 137 16:25  137:16:25 -  0.00
+discard = true
+
+[[hint]]
+# Discard span 7 - ~ 26 mins, very very noisy
+position = 420265342 # 152 16:46  142:16:46 -  0.00
+discard = true
+
+[[hint]]
+# Discard span 9 - ~ 12 mins, very very noisy
+position = 439886959 # 153 20:55  153:20:55 -  0.00
+discard = true

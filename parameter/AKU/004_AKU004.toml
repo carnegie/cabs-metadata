@@ -1,0 +1,25 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 4
+station_code = "AKU"
+reel_number = 4
+
+[tape.epoch]
+start_year = 1973 # 1973-02-20--1973-03-04
+start_month = 2
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "AKU/004_AKU004_NG_20250115.tpc5"
+
+[[hint]]
+# Shift span 5
+position = 150007494 # 066 18:11  066:17:00 +  0.00
+hour = 17
+minute = 0

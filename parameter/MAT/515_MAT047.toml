@@ -1,0 +1,24 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 515
+station_code = "MAT"
+reel_number = 47
+
+[tape.epoch]
+start_year = 1976 # 1976-10-22--1976-12-31
+start_month = 10
+time_zone_offset = 9  # JST
+
+[tape.clock.generation_2]
+signal_polarity_inverted = true
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "MAT/515_MAT047_NG_20250408_truncated.tpc5"
+
+[[hint]]
+# Discard span 2 - ~12 mins, bad ts, cannot confirm timing
+position = 98848355 # 162 02:42  162:02:42 +  0.00
+discard = true

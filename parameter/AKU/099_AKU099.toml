@@ -1,0 +1,35 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 99
+station_code = "AKU"
+reel_number = 99
+
+[tape.epoch]
+start_year = 1994 # 1994-09-13--1994-12-12
+start_month = 9
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "AKU/099_AKU099_NG_20250423.tpc5"
+
+[[hint]]
+position = 20165640 # near start of span 1 (in minute 45)
+day = 257
+hour = 10 # may be an hour off; unconfirmed - consider discarding span instead
+minute = 45
+
+[[hint]]
+position = 20750003 # short span 2
+day = 257
+hour = 13
+
+[[hint]]
+position = 20946670 # short span 3
+day = 257
+

@@ -1,0 +1,24 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 561
+station_code = "SWU"
+reel_number = 13
+
+[tape.epoch]
+start_year = 1987
+start_month = 12
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "SWU/561_SWU013_NG_20200304.tpc5"
+
+[[hint]]
+# Shift span 0
+position = 44750 # 342 07:23  342:07:23 -  0.00
+minute = 24

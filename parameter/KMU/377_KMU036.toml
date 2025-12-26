@@ -1,0 +1,45 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 377
+station_code = "KMU"
+reel_number = 36
+
+[tape.epoch]
+start_year = 1974
+start_month = 9
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "KMU/377_KMU036_NG_20190823.tpc5"
+
+[[hint]]
+# Shift span 2 back 10 mins
+position = 47803739 # 272 06:36 272:06:36
+minute = 27
+
+[[hint]]
+# Discard span 3 - ~11 mins, bit noisy
+position = 65666351
+discard = true
+
+[[hint]]
+# Discard span 4 - ~ 21 mins, noisy
+position = 65773011 # 274 02:06  274:02:06 -  0.00
+discard = true
+
+[[hint]]
+# Discard span 38 - ~1 hr, bad TS
+position = 119567600
+discard = true
+
+[[hint]]
+# Discard span 57 - ~ 8 mins, short, cannot confirm
+position = 342462149 # 304 11:08  304:11:08 -  0.00
+discard = true
+

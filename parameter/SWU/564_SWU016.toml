@@ -1,0 +1,29 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 564
+station_code = "SWU"
+reel_number = 16
+
+[tape.epoch]
+start_year = 1988
+start_month = 10
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "SWU/564_SWU016_NG_20200309.tpc5"
+
+[[hint]] 
+# Discard span 1 - ~ 24 mins, cannot confirm timing
+position = 113291962 # 357 06:06  357:06:06 + 
+discard = true
+
+[[hint]]
+# Discard span 2 - ~ 40 mins, cannot confirm timing
+position = 113478096 # 357 07:08  357:07:08 +  0.00
+discard = true

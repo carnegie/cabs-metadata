@@ -1,0 +1,42 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 58
+station_code = "AKU"
+reel_number = 58
+
+[tape.epoch]
+start_year = 1985
+start_month = 10
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "AKU/058_AKU058_NG_20190801.tpc5"
+
+[[hint]]
+position = 117871
+day = 296 #  263 16:07  263:16:07 +
+
+[[hint]] # span 1
+# Discard span 1 - ~ 35 hrs, very very noisy, bad ts, cannot confirm timing, maybe revisit`
+position = 217222334
+discard = true
+#day = 318 # 285 07:34  285:07:34 -
+
+
+[[hint]] # start span 2
+# Discard span 2 - ~ 8.5 hrs, very very noisy, bad ts, cannot confirm timing
+position = 232189036
+#day = 319 # 286 19:27  40c:00:02 -
+discard = true
+
+[[hint]]
+# Discard span 3 - ~ 6.25 hrs, very very noisy, bad ts, cannot confirm timing
+position = 245934476 # end span 3
+discard = true
+#day = 364 #  288 04:23  288:04:23 -

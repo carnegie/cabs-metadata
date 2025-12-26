@@ -1,0 +1,39 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 56
+station_code = "AKU"
+reel_number = 56
+
+[tape.epoch]
+start_year = 1985
+start_month = 5
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "AKU/056_AKU056_NG_20190801.tpc5"
+
+[[hint]]
+# Shift span 0 to beginning of the tape 
+position = 104984 # 137 15:30  137:15:30 -  0.00
+day = 127
+
+[[hint]]
+# Discard span 1 - ~ 16 mins, very noisy, cannot confirm
+position = 703471972 # 193 19:35  193:19:35 -  0.00
+discard = true
+
+[[hint]]
+# Discard span 3 - ~ 13 mins, very noisy, cannot confirm
+position = 715347878  #201 17:43  201:17:43 -  0.00
+discard = true
+
+[[hint]]
+# Keep span 4 for now
+position = 721237376 # 202 07:50  ---:--:-- ?
+time_questionable = true

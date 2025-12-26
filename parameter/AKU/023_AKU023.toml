@@ -1,0 +1,134 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 23
+station_code = "AKU"
+reel_number = 23
+
+[tape.epoch]
+start_year = 1977
+start_month = 10
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "AKU/023_AKU023_NG_20190329.tpc5"
+
+[[hint]]
+# Shift span 0 to fit with service sheet
+position = 85680 # 290 18:10  290:18:10 +  0.00
+day = 293
+
+[[hint]]
+# Shift span 1
+position = 59922964 # 139 15:08  139:15:08 +  9.76 false
+day = 299 
+hour = 16
+minute = 41
+
+[[hint]]
+# Shift span 2
+position = 60037193 # 009 13:30  009:13:30 -  0.00 false
+day = 299
+hour = 15
+minute = 57
+
+[[hint]]
+# Shift span 3
+position = 60174034 # 059 02:05  059:02:05 + 12.89 false
+day = 299
+hour = 16
+minute = 15
+
+[[hint]]
+# Shift span 4
+position = 60277908 # 117 13:55  117:13:55 -  0.00 false
+day = 299
+hour = 16
+
+[[hint]]
+# Shift span (now 3)
+position = 60811602 # 263 18:55  252:18:55 -  0.00 false
+day = 299
+
+[[hint]]
+# Shift span (now 4)
+position = 99891102 # 312 16:02  312:16:02 + 10.76 false
+day = 304
+
+[[hint]]
+# Shift span (now 5)
+position = 100043566 # 327 16:26  312:16:24 + 10.04 false
+day = 304
+
+[[hint]]
+# Shift span 6
+position = 110619512 # 051 09:04  051:09:04 + 13.64 false
+day = 351
+
+[[hint]]
+# Shift span 7
+position = 111054296 # 137 07:50  137:07:50 -  0.00 false
+day = 351
+
+[[hint]]
+# Shift span 8
+position = 134694949 # 251 03:03  251:03:03 + 11.61 false
+day = 308
+
+
+[[hint]]
+# Shift span 28
+position = 477852415 # 270 23:10  270:23:10 +  9.12 false
+day = 159
+
+[[hint]]
+# Shift span 29
+position = 483154656 # 160 15:23  281:15:23 -  0.01 false
+day = 352
+
+[[hint]]
+# Shift span 31
+position = 489785244 # 124 13:06  124:13:06 + 10.98 false
+day = 353
+hour = 9
+minute = 45
+
+[[hint]]
+# Shift span 35
+position = 632992143 # 135 06:40  135:06:40 +  9.30 false
+day = 367
+hour = 15
+minute = 8
+
+
+[[hint]]
+position = 633862481 # 298 01:30  298:01:30 -  0.00 false
+day = 367
+hour = 17
+minute = 17
+
+[[hint]]
+# Shift span 38
+position = 671032202 # 358 15:59  358:15:59 -  0.01 false
+day = 371
+hour = 9
+
+[[hint]]
+# Shift span 39
+position = 673796242 # 259 17:30  259:17:30 -  0.01 false
+day = 371
+hour =16
+minute = 36
+
+[[hint]]
+# Shift span 40
+position = 674318356 # 259 18:05  259:18:05 +  0.00
+day = 371
+hour = 17
+minute = 50
+

@@ -1,0 +1,27 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 117
+station_code = "AKU"
+reel_number = 117
+
+[tape.epoch]
+start_year = 1998 # 1998-09-28--1998-12-09
+start_month = 9
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "AKU/117_AKU117_NG_20230217.tpc5"
+
+[[hint]] # span 3
+position = 316542096
+day = 302 #  308
+
+[[hint]] # span 4
+position = 324041745
+day = 303 #  307

@@ -1,0 +1,45 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 38
+station_code = "AKU"
+reel_number = 38
+
+[tape.epoch]
+start_year = 1981
+start_month = 6
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "AKU/038_AKU038_NG_20190705.tpc5"
+
+
+[[hint]] # Span #0001
+position = 92371408
+day = 188 #
+
+[[hint]] # Span #0002
+position = 95605556
+day = 189
+
+[[hint]] # Span #0003
+position = 156121096
+day = 193
+
+[[hint]] # Span #0004
+position = 163605818
+day = 194
+
+[[hint]] # Span #0008
+position = 232332510
+day = 316
+
+[[hint]] # Span #0012
+position = 293843386
+day = 348
+

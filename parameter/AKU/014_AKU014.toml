@@ -1,0 +1,72 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 14
+station_code = "AKU"
+reel_number = 14
+
+[tape.epoch]
+start_year = 1975
+start_month = 5
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "AKU/014_AKU014_NG_20190321.tpc5"
+
+[[hint]]
+# Shift span 0
+position = 141727 # 142 10:10  142:10:10 +  0.00
+hour = 10
+minute = 12
+
+[[hint]]
+# Discard span 1 - ~ 18 mins, very very noisy, cannot confirm timing
+position = 45688320 # 146 23:23  146:23:23 -  0.00
+discard = true
+
+[[hint]]
+# Discard span 3 - ~ 7 mins, cannot confirm timing
+position = 125428713 # 154 22:38  154:22:38 -  0.00
+discard = true
+
+[[hint]]
+# Discard span 4 - ~ 14 mins, cannot confirm timing
+position = 125624074 # 154 22:55  154:22:55 -  0.00
+discard = true
+
+[[hint]]
+position = 125728000 # start span 5
+day = 154 #  154 23:35  154:23:35 +
+
+[[hint]]
+# Discard span 6 - ~ 10 mins, bad ts
+position = 507370476 # 295 15:02  295:15:02 +  0.00
+discard = true
+
+[[hint]]
+# Shift span 7
+position = 507590236 # 193 04:10  071:19:10 +  0.00
+day = 193
+hour = 4
+minute = 20
+
+[[hint]] 
+# Discard span 10 - ~ 9.5 hrs, cannot confirm timing, should revisit
+position = 521400000
+discard = true
+
+[[hint]] 
+# Discard span 9 - ~ 3.25 hrs, cannot confirm timing, should revisit
+position = 517445306
+discard = true
+
+
+[[hint]]
+# Discard span 12 - ~ 6 mins, cannot confirm timing
+position = 612982135 # 203 20:18  203:20:18 -  0.00
+discard = true

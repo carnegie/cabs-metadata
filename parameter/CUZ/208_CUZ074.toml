@@ -1,0 +1,47 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 208
+station_code = "CUZ"
+reel_number = 74
+
+[tape.epoch]
+start_year = 1982
+start_month = 7
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = false
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "CUZ/208_CUZ074_NG_20170814.tpc5"
+
+[[hint]]
+# Discard span 6 - ~6 mins, bad ts
+position = 600364555 # 291 03:55  2b1:04:33 -  0.00
+discard = true
+
+[[hint]]
+# Discard span 8 - ~19.5 hrs, very noisy, cannot confirm timing
+position = 600811603 # 251 05:39  2b1:05:39 -  0.00
+discard = true
+
+[[hint]]
+position = 158879
+day = 189
+
+#[[hint]]
+#position = 595032890
+#day = 250
+
+[[hint]] # span 9 start
+position = 601123191
+day = 251
+
+[[hint]]
+position = 614526311
+day = 252
+
+

@@ -1,0 +1,25 @@
+# CABS tape digitization metadata
+
+[tape]
+catalog_number = 429
+station_code = "KMU"
+reel_number = 89
+
+[tape.epoch]
+start_year = 1987 # 1987-06-01 --1987-10-01
+start_month = 6
+time_zone_offset = 0
+
+[tape.clock.generation_2]
+signal_polarity_inverted = true
+
+[digitization]
+playback_head = "NG"
+channel_layout = "Standard_NG_16_Channels"
+raw_data = "KMU/429_KMU089_NG_20241114.tpc5"
+
+[[hint]]
+# Discard span 8 - ~ 27 mins, cannot confirm
+position = 305683838 # 214 05:40  214:05:40 -  0.00 
+discard = true
+
