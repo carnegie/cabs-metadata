@@ -25,7 +25,7 @@ discard = true
 
 [[hint]]
 # Discard span 1 - ~ 12 mins, very very noisy
-positon = 580371 # 076 06:40  076:06:40 -  0.00
+position = 580371 # 076 06:40  076:06:40 -  0.00
 discard = true
 
 [[hint]]
