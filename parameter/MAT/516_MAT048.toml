@@ -18,17 +18,8 @@ playback_head = "NG"
 channel_layout = "Standard_NG_16_Channels"
 raw_data = "MAT/516_MAT048_NG_20181019.tpc5"
 
-[[hint]]
-# Shift Span 1 by 9 hours to correspond with service sheet calibration times
-position = 386843 # 006 09:52  006:09:52 -  0.00
-hour = 0
 
 [[hint]]
 # Service sheet indicate something happened on 2/17 - following data is offset by ~10 mins. Timing is corrected by 2/24. This resulted in overlap between spans thus we are pruning the last 10 mins of span 1 to make it consistent
 position = 483430217 # 055 00:18  055:09:18 -  0.00
 prune = 10
-
-[[hint]]
-# Shift span 2 by 9 hours to correspond with service sheet calibration times
-position = 483609978 # 055 09:34  055:09:34 +  0.00
-hour = 0
