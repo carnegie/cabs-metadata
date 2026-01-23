@@ -49,3 +49,6 @@ Note: Since the PDF files are quite large, they are managed through the git Larg
 File Storage extension. You may need to install git-lfs on your system to work
 with this part of the repository. See https://git-lfs.com/ for instructions.
 
+## StationXML
+
+ObsPy script to create channel metadata descriptions in StationXML format.

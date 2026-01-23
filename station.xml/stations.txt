@@ -1,0 +1,11 @@
+Region	Location (Code)	Coordinates	Timespan	Components
+
+CUZ Cuzco, Peru                    -13.563    -71.877	1966 – 1986
+TCC Toconce, Chile                 -22.275    -68.172	1965 – 1971
+TRU Trujillo, Peru                  -8.078    -78.861	1967 – 1986
+KMU Kamikineusu, Japan              42.238    142.967	1967 – 1996
+MAT Matsushiro, Japan	            36.543    138.207	1967 – 1984
+SWU Sawauchi, Japan	            39.490    140.790	1984 – 1996
+AKU Akureyri, Iceland	            65.686    -18.099	1972 – 2003
+PMG Port Moresby, Papua New Guinea  -9.406    147.159	1966 – 1992
+DTM Washington DC, USA	            38.959    -77.063	1966 – 1994
