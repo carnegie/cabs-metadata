@@ -18,3 +18,18 @@ playback_head = "NG"
 channel_layout = "Standard_NG_16_Channels"
 raw_data = "AKU/110_AKU110_NG_20230131.tpc5"
 
+#[[hint]]# delete Span 0
+#position = 000269991 
+#discard = true
+#
+#[[hint]]# delete Span 2
+#position = 030770401 #  --- --:--  0b3:01:22 -  0.00 false
+#discard = true
+
+[[hint]]# delete Span 4
+position = 637789491 # 365 02:09  0b0:05:57 -  0.00 false
+discard = true
+
+[[hint]]# delete Span 5
+position = 638004198 #  --- --:--  0b0:06:17 -  0.00 false
+discard = true

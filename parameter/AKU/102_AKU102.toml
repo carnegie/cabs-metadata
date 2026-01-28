@@ -20,15 +20,22 @@ raw_data = "AKU/102_AKU102_NG_20221208.tpc5"
 
 [[hint]]
 position = 606627532 # span 1
-day = 183
-hour = 17 # uncertain
-prune = 39 # uncertain
+discard = true
+#day = 183
+#hour = 17 # uncertain
+#prune = 39 # uncertain
 
 [[hint]]
 position = 615676301 # span 2
-day = 184
-hour = 14 # uncertain
+discard = true
+#day = 184
+#hour = 14 # uncertain
 
 [[hint]]
 position = 666229148 # span 6
-day = 189
+#day = 189
+discard=true
+
+[[hint]]
+position = 714664966 # 194 15:05  0b1:15:05 +  7.88 false
+discard=true

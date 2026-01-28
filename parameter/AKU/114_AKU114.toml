@@ -18,11 +18,12 @@ playback_head = "NG"
 channel_layout = "Standard_NG_16_Channels"
 raw_data = "AKU/114_AKU114_NG_20230209.tpc5"
 
-[[hint]]
+[[hint]] #span3
 position = 262804526
 day = 70
 
-[[hint]]
+[[hint]] #span4
 position = 311736310
-day = 75
-hour = 7
+discard = true
+#day = 75
+#hour = 7

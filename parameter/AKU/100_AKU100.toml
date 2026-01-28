@@ -18,14 +18,21 @@ playback_head = "NG"
 channel_layout = "Standard_NG_16_Channels"
 raw_data = "AKU/100_AKU100_NG_20250422.tpc5"
 
-[[hint]]
-position = 120897203 # span 2
-day = 340 # --- 13:48  0a1:13:48 -
-hour = 15
+#[[hint]]
+#position = 120897203 # span 2
+#day = 340 # --- 13:48  0a1:13:48 -
+#hour = 15
+#
+#[[hint]]
+#position = 627033595 # span 4
+#day = 390 # --- --:22  0a2:01:22 -
+#hour = 17
 
-[[hint]]
-position = 627033595 # span 4
-day = 390 # --- --:22  0a2:01:22 -
-hour = 17
+[[hint]] #span 1
+position = 110681250 # 339 15:07  0a0:0d:52 -  0.00 false
+discard = true
 
+[[hint]] #span 3
+position = 634416263 # 026 10:45  0a2:18:52 -  0.00 false
+discard = true
 

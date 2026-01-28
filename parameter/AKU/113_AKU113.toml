@@ -20,13 +20,8 @@ raw_data = "AKU/113_AKU113_NG_20230206.tpc5"
 
 [[hint]]
 position = 304183413 # span 2
-day = 367
-hour = 9
-prune = 12 # uncertain
+discard = true
 
 [[hint]]
 position = 305350632 # span 3
-day = 367
-hour = 11
-prune = 9 # uncertain
-
+discard = true

@@ -18,3 +18,7 @@ playback_head = "NG"
 channel_layout = "Standard_NG_16_Channels"
 raw_data = "AKU/109_AKU109_NG_20230126.tpc5"
 
+[[hint]]# discard span 2
+position = 304637935 # 240 04:06  0b0:20:39 -  0.00 false
+discard = true
+
