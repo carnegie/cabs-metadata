@@ -14,9 +14,9 @@ time_zone_offset = 0
 signal_polarity_inverted = true
 two_seconds_per_pulse = false
 extra_hour_mark = false
-discriminator_cpm = 13
-discriminator_extra_bins = 2
-discriminator_threshold = 0.001
+discriminator_cpm = 11
+discriminator_extra_bins = 1
+marker_cycles_per_second = 7
 minute_mark_style = "one_second_mark"
 
 [digitization]
@@ -27,7 +27,6 @@ raw_data = "MAT/481_MAT013_NG_20250228.tpc5"
 [[hint]]
 position = 1895511
 day = 314
-cycle = "PM"
 
 [[hint]]
 position = 102495409

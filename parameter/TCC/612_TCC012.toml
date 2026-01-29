@@ -10,16 +10,29 @@ start_year = 1968 # 1968-04-25 -- 1968-12-?? (tape with long gap!)
 start_month = 4
 time_zone_offset = 0
 
+#[tape.clock.generation_1]
+#signal_polarity_inverted = true
+#two_seconds_per_pulse = true
+#extra_hour_mark = true
+#discriminator_cpm = 11
+#discriminator_extra_bins = 0
+#minute_mark_style = "one_second_mark_over_half_rate_pulses"
+
 [tape.clock.generation_1]
 signal_polarity_inverted = true
-two_seconds_per_pulse = true
+two_seconds_per_pulse = false
 extra_hour_mark = true
-discriminator_cpm = 11
-discriminator_extra_bins = 0
-discriminator_threshold = 15.0
+discriminator_cpm = 10 # 0.16 Hz - very low frequency
+discriminator_extra_bins = 1
+marker_cycles_per_second = 6 # almost exactly at 6 Hz
+# 15 minutes of default discriminator signal - default
 minute_mark_style = "one_second_mark_over_half_rate_pulses"
 
 [digitization]
 playback_head = "NG"
 channel_layout = "Standard_NG_16_Channels"
 raw_data = "TCC/612_TCC008_NG_20200730.tpc5"
+
+[[hint]]
+position = 100000
+day = 115

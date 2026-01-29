@@ -12,14 +12,19 @@ time_zone_offset = 0
 
 [tape.clock.generation_1]
 signal_polarity_inverted = true
-two_seconds_per_pulse = true
+two_seconds_per_pulse = false
 extra_hour_mark = true
-discriminator_cpm = 11
-discriminator_extra_bins = 0
-discriminator_threshold = 15.0
+discriminator_cpm = 10 # 0.16 Hz - very low frequency
+discriminator_extra_bins = 1
+marker_cycles_per_second = 6 # almost exactly at 6 Hz
+# 15 minutes of default discriminator signal - default
 minute_mark_style = "one_second_mark_over_half_rate_pulses"
 
 [digitization]
 playback_head = "NG"
 channel_layout = "Standard_NG_16_Channels"
 raw_data = "TCC/616_TCC012_NG_20200814.tpc5"
+
+[[hint]]
+position = 11127456
+day = 314

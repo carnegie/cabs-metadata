@@ -18,7 +18,6 @@ extra_hour_mark = false
 #discriminator_extra_bins = 2
 discriminator_cpm = 420  # 
 discriminator_extra_bins = 5
-discriminator_threshold = 0.1
 minute_mark_style = "one_second_mark"
 
 [digitization]

@@ -13,10 +13,9 @@ time_zone_offset = 0
 [tape.clock.generation_1]
 signal_polarity_inverted = true
 two_seconds_per_pulse = false
-extra_hour_mark = false
-discriminator_cpm = 288
-discriminator_extra_bins = 5
-discriminator_threshold = 0.0015
+extra_hour_mark = false # this tape has no hour markers at all
+discriminator_cpm = 13
+discriminator_extra_bins = 1
 minute_mark_style = "one_second_mark"
 
 [digitization]
@@ -24,3 +23,6 @@ playback_head = "NG"
 channel_layout = "Standard_NG_16_Channels"
 raw_data = "CUZ/153_CUZ010_NG_20250203.tpc5"
 
+[[hint]]
+position = 1901954 # span 0
+day = 169

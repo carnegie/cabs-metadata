@@ -10,16 +10,34 @@ start_year = 1966 # 1966-04-24 -- ?
 start_month = 4
 time_zone_offset = 0
 
+#[tape.clock.generation_1]
+#signal_polarity_inverted = true
+#two_seconds_per_pulse = true
+#extra_hour_mark = true
+#discriminator_cpm = 11
+#discriminator_extra_bins = 0
+#discriminator_threshold = 15.0
+#minute_mark_style = "one_second_mark_over_half_rate_pulses"
+
 [tape.clock.generation_1]
 signal_polarity_inverted = true
-two_seconds_per_pulse = true
+two_seconds_per_pulse = false
 extra_hour_mark = true
-discriminator_cpm = 11
-discriminator_extra_bins = 0
-discriminator_threshold = 15.0
-minute_mark_style = "one_second_mark_over_half_rate_pulses"
+discriminator_cpm = 17 # higher frequency than 0.25Hz
+discriminator_extra_bins = 1
+marker_cycles_per_second = 6 # almost exactly at 6 Hz
+# 15 minutes of default discriminator signal - default
+minute_mark_style = "one_second_mark_over_half_rate_pulses" # TODO may need to change!
+
+# TODO discriminator signal often sets in one minute after end of hour marker,
+# leaving one minute without signal between them - may need to adjust cabsproc
+# to account for that for increased robustness.
 
 [digitization]
 playback_head = "NG"
 channel_layout = "Standard_NG_16_Channels"
 raw_data = "TCC/606_TCC002_NG_20200813.tpc5"
+
+[[hint]]
+position = 390002
+day = 114

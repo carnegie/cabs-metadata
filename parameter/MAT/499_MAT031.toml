@@ -14,10 +14,8 @@ time_zone_offset = 0
 signal_polarity_inverted = true
 two_seconds_per_pulse = false
 extra_hour_mark = false
-discriminator_cpm = 420 #13
-discriminator_extra_bins = 15 #2
-marker_cycles_per_second = 7
-#discriminator_threshold = 0.001
+discriminator_cpm = 420 # 7 Hz    -- 480 # 8Hz +/- 0.5 Hz
+discriminator_extra_bins = 30
 minute_mark_style = "one_second_mark"
 
 [digitization]
@@ -25,3 +23,7 @@ playback_head = "NG"
 channel_layout = "Standard_NG_16_Channels"
 raw_data = "MAT/499_MAT031_NG_20201022.tpc5"
 
+
+[[hint]]
+position = 15299359
+day=100

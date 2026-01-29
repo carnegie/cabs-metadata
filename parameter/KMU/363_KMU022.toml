@@ -10,12 +10,22 @@ start_year = 1971 # 1971-12-01--1972-02-12
 start_month = 12
 time_zone_offset = 0
 
+#[tape.clock.generation_1]
+#signal_polarity_inverted = false
+#two_seconds_per_pulse = false
+#extra_hour_mark = false
+#discriminator_cpm = 288
+#discriminator_extra_bins = 5
+#minute_mark_style = "one_second_mark"
+
 [tape.clock.generation_1]
-signal_polarity_inverted = false
+signal_polarity_inverted = true
 two_seconds_per_pulse = false
-extra_hour_mark = false
-discriminator_cpm = 288
-discriminator_extra_bins = 5
+extra_hour_mark = true         # hour marks seem to (sometimes) last for two minutes
+discriminator_cpm = 13         # between 13 and 14 cpm, a bit closer to 13
+discriminator_extra_bins = 1
+marker_cycles_per_second = 7   # close to 7 Hz (perhaps ~7.2 Hz or so)
+discriminator_minutes = 14     # consistently only minutes 0..13 have discriminator signal
 minute_mark_style = "one_second_mark"
 
 [digitization]
@@ -23,3 +33,6 @@ playback_head = "NG"
 channel_layout = "Standard_NG_16_Channels"
 raw_data = "KMU/363_KMU022_NG_20250221.tpc5"
 
+[[hint]]
+position = 1256363
+day = 335

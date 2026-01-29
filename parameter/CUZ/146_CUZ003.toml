@@ -12,11 +12,11 @@ time_zone_offset = 0
 
 [tape.clock.generation_1]
 signal_polarity_inverted = true
-two_seconds_per_pulse = false
+two_seconds_per_pulse = false # true
 extra_hour_mark = false
-discriminator_cpm = 288
-discriminator_extra_bins = 5
-discriminator_threshold = 0.0015
+discriminator_cpm = 12
+discriminator_extra_bins = 1
+marker_cycles_per_second = 4   # closer to 4 than to 5 Hz
 minute_mark_style = "one_second_mark"
 
 [digitization]
@@ -24,3 +24,10 @@ playback_head = "NG"
 channel_layout = "Standard_NG_16_Channels"
 raw_data = "CUZ/146_CUZ003_NG_20250206.tpc5"
 
+[[hint]]
+position = 167422690 # span 1
+day = 207
+
+[[hint]]
+position = 173523884 # span 4
+day = 208

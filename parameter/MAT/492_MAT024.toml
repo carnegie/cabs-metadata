@@ -14,9 +14,8 @@ time_zone_offset = 0
 signal_polarity_inverted = true
 two_seconds_per_pulse = false
 extra_hour_mark = false
-discriminator_cpm = 13
-discriminator_extra_bins = 2
-discriminator_threshold = 0.001
+discriminator_cpm = 11
+discriminator_extra_bins = 1
 minute_mark_style = "one_second_mark"
 
 [digitization]

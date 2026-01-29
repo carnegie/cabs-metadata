@@ -16,7 +16,6 @@ two_seconds_per_pulse = false
 extra_hour_mark = false
 discriminator_cpm = 288
 discriminator_extra_bins = 5
-discriminator_threshold = 0.0015
 minute_mark_style = "one_second_mark"
 
 [digitization]

@@ -11,14 +11,20 @@ start_month = 2
 time_zone_offset = 0
 
 [tape.clock.generation_1]
-signal_polarity_inverted = false
+signal_polarity_inverted = true
 two_seconds_per_pulse = false
-extra_hour_mark = false
-discriminator_cpm = 288
-discriminator_extra_bins = 5
+extra_hour_mark = true         # hour marks seem to (sometimes) last for two minutes
+discriminator_cpm = 14         # between 14 and 15 cpm
+discriminator_extra_bins = 1
+marker_cycles_per_second = 8   # close to 8 Hz
+discriminator_minutes = 14     # consistently only minutes 0..13 have discriminator signal
 minute_mark_style = "one_second_mark"
 
 [digitization]
 playback_head = "NG"
 channel_layout = "Standard_NG_16_Channels"
 raw_data = "KMU/369_KMU028_NG_20250116.tpc5"
+
+[[hint]]
+position = 100000
+day = 41
