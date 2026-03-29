@@ -52,3 +52,14 @@ with this part of the repository. See https://git-lfs.com/ for instructions.
 ## StationXML
 
 ObsPy script to create channel metadata descriptions in StationXML format.
+
+## Final report files
+
+Circuit Diagrams: OrCAD Layout and OrCAD Design files for Preamplifier circuits.
+
+Tape QC:
+
+Detailed documentation of all spans reviewed for this effort. _Span.xlsx files contain an overview of all of the reviewed spans, along with comments and whether the span was archived or not (strike-through indicates span was not archived). Event Verification.xls files contain a list of events and calibration tests that were used to verify the reasonable-ness of the time in each individual span. 
+
+Tape_Summary_File.xlsx
+Summary of all tapes that were part of this effort, along with the status at the time of report submission.
